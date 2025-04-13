@@ -1,9 +1,9 @@
 {
   "mainAssemblyName": "DesafioAxians",
   "resources": {
-    "hash": "sha256-vXDZUYKsZ9+4ibow/RXXO9GktiX4wAoN792ZwRTpZxQ=",
+    "hash": "sha256-EESo6YSFoaDnblW09FlrXVf8fTvDz8Rkmx6HEmUTSKU=",
     "fingerprinting": {
-      "DesafioAxians.vqhdx6ai32.wasm": "DesafioAxians.wasm",
+      "DesafioAxians.amsxj0tw1a.wasm": "DesafioAxians.wasm",
       "Microsoft.AspNetCore.Components.3z8oblhzhw.wasm": "Microsoft.AspNetCore.Components.wasm",
       "Microsoft.AspNetCore.Components.Web.7snobyj6uw.wasm": "Microsoft.AspNetCore.Components.Web.wasm",
       "Microsoft.AspNetCore.Components.WebAssembly.d13yrm8kw4.wasm": "Microsoft.AspNetCore.Components.WebAssembly.wasm",
@@ -64,7 +64,7 @@
       "System.Runtime.InteropServices.JavaScript.era55l3sbb.wasm": "sha256-uo4WQ39eiOB+w/weMzCVCfXQey09VlzpTm+e6aR83IA="
     },
     "assembly": {
-      "DesafioAxians.vqhdx6ai32.wasm": "sha256-6atmnLceW1KwBx4RzMRWJRNTEVVSSLVJUN45JpH/YZQ=",
+      "DesafioAxians.amsxj0tw1a.wasm": "sha256-ItLUCWRkexkNEXVQz1a4Bj1icPf27gY9IwqaiExwy30=",
       "Microsoft.AspNetCore.Components.3z8oblhzhw.wasm": "sha256-kY3x+5m6APOZSv30Rx/xNF6cOsVIPpauDPAhnb5Jr/s=",
       "Microsoft.AspNetCore.Components.Web.7snobyj6uw.wasm": "sha256-mQ75JaiJo4vFK1ZMLlbooOg5mRXMSKJ499ZdCNhh37U=",
       "Microsoft.AspNetCore.Components.WebAssembly.d13yrm8kw4.wasm": "sha256-Hymk0fViavnVW/gMYu9JN650NQTS5P8zPntoNQH10Xw=",
