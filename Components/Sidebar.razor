@@ -6,22 +6,19 @@
 
         <div class="sidebar-option @(isActive ? "active" : "")"
              @onclick="() => OnStepChange.InvokeAsync(i)">
-            <span class="option-text">Opção @i</span>
+            <span class="option-text" style="font-size: 14px;">Opção @i</span>
 
             @if (isActive)
             {
-                <img src="Icons/arrow-left.png" width="24" />
-                <i class="bi bi-arrow-repeat text-purple"></i>
+                <img src="Icons/Is-Active.png" width="24" />
             }
             else if (isCompleted)
             {
-                <img src="Icons/arrow-left.png" width="24" />
-                <i class="bi bi-check-circle-fill text-success"></i>
+                <img src="Icons/Complete.png" width="24" />
             }
             else
             {
-                <img src="Icons/arrow-left.png" width="24" />
-                <i class="bi bi-circle text-muted-gray"></i>
+                <img src="Icons/Tocomplete.png" width="24" />
             }
         </div>
     }

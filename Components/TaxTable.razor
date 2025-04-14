@@ -1,41 +1,100 @@
 @using DesafioAxians.Models
 
-<div class="card shadow-sm p-4 mb-4">
+<div class="card shadow-sm p-4 mb-4 custom-tax-table">
     <div class="d-flex justify-content-between align-items-center mb-3">
-        <h5 class="mb-0">Lista de Taxas</h5>
-        <button class="btn btn-primary btn-sm" @onclick="AdicionarTaxa">
-            <i class="bi bi-plus-lg me-1"></i> Adicionar Taxa
+        <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="taxaSwitch" @bind="TaxaPorProduto">
+            <label class="form-check-label ms-2" for="taxaSwitch">Taxa por Produto</label>
+        </div>
+
+        <button class="btn btn-outline-primary btn-sm" @onclick="AdicionarTaxa">
+            <i class="bi bi-plus-lg me-1"></i> ADICIONAR TAXA
         </button>
     </div>
 
-    <table class="table table-hover align-middle">
-        <thead class="table-light">
+    <table class="table table-hover table-borderless align-middle">
+        <thead >
             <tr>
-                <th scope="col">
-                    <input type="checkbox" @onchange="ToggleSelecionarTodos" checked="@TodosSelecionados" />
-                </th>
-                <th scope="col">Tipo</th>
-                <th scope="col">Valor</th>
+                <th><input type="checkbox" @onchange="ToggleSelecionarTodos" checked="@TodosSelecionados" /></th>
+                <th>NUTS II</th>
+                <th>NUTS III</th>
+                <th>Concelho</th>
+                <th class="text-end">Taxa (%)</th>
+                <th class="text-end"></th>
             </tr>
         </thead>
         <tbody>
-            @foreach (var taxa in Taxas)
+            @foreach (var taxa in PaginatedTaxas)
             {
-                <tr>
-                    <td>
-                        <input type="checkbox" checked="@taxa.Selecionada" @onchange="() => ToggleTaxa(taxa)" />
+                <tr class="table-light" style="border-radius: 5px;">
+                    <td><input type="checkbox" checked="@taxa.Selecionada" @onchange="() => ToggleTaxa(taxa)" /></td>
+                    <td>@taxa.Nuts2</td>
+                    <td>@taxa.Nuts3</td>
+                    <td>@taxa.Concelho</td>
+                    <td class="text-end">@($"{taxa.Valor:0.##} %")</td>
+                    <td class="text-end">
+                        <button class="btn btn-link text-danger p-0" @onclick="() => RemoverTaxa(taxa)">
+                            <i class="bi bi-trash"></i>
+                        </button>
                     </td>
-                    <td>@taxa.Tipo</td>
-                    <td>@taxa.Valor.ToString("C")</td>
                 </tr>
             }
         </tbody>
     </table>
+
+   <div class="d-flex justify-content-end align-items-center mt-3 flex-wrap gap-4">
+    <span class="text-muted">@($"{PaginaAtual} de {TotalPaginas} páginas ({Taxas.Count} itens)")</span>
+
+    <div class="d-flex align-items-center gap-2">
+        <label class="mb-0">Itens por página</label>
+        <select class="form-select form-select-sm" @onchange="AlterarItensPorPagina">
+            <option value="5">5</option>
+            <option selected value="10">10</option>
+            <option value="25">25</option>
+        </select>
+    </div>
+
+    <div class="d-flex align-items-center gap-1">
+        <button class="btn btn-icon" @onclick="() => MudarPagina(1)" disabled="@(PaginaAtual == 1)">
+            <i class="bi bi-chevron-double-left"></i>
+        </button>
+        <button class="btn btn-icon" @onclick="() => MudarPagina(PaginaAtual - 1)" disabled="@(PaginaAtual == 1)">
+            <i class="bi bi-chevron-left"></i>
+        </button>
+
+        @for (int i = 1; i <= TotalPaginas; i++)
+        {
+            <button class="btn btn-icon @(i == PaginaAtual ? "active" : "")" @onclick="() => MudarPagina(i)">
+                @i
+            </button>
+        }
+
+        <button class="btn btn-icon" @onclick="() => MudarPagina(PaginaAtual + 1)" disabled="@(PaginaAtual == TotalPaginas)">
+            <i class="bi bi-chevron-right"></i>
+        </button>
+        <button class="btn btn-icon" @onclick="() => MudarPagina(TotalPaginas)" disabled="@(PaginaAtual == TotalPaginas)">
+            <i class="bi bi-chevron-double-right"></i>
+        </button>
+    </div>
 </div>
+
+
+</div>
+
+
 
 @code {
     [Parameter] public List<Taxa> Taxas { get; set; } = new();
     [Parameter] public EventCallback OnSelecionar { get; set; }
+
+    private bool TaxaPorProduto { get; set; }
+    private int PaginaAtual { get; set; } = 1;
+    private int ItensPorPagina { get; set; } = 10;
+
+    private int TotalPaginas => (int)Math.Ceiling((double)Taxas.Count / ItensPorPagina);
+
+    private IEnumerable<Taxa> PaginatedTaxas =>
+        Taxas.Skip((PaginaAtual - 1) * ItensPorPagina).Take(ItensPorPagina);
 
     private bool TodosSelecionados => Taxas.All(t => t.Selecionada);
 
@@ -49,15 +108,38 @@
     {
         var selecionar = (bool)e.Value;
         foreach (var t in Taxas)
-        {
             t.Selecionada = selecionar;
-        }
         return OnSelecionar.InvokeAsync();
     }
 
     private void AdicionarTaxa()
     {
-        Taxas.Add(new Taxa("Outro", 7.5m));
+        Taxas.Add(new Taxa("Outro", 7.5m)
+        {
+            Nuts2 = "Norte",
+            Nuts3 = "Área Metropolitana",
+            Concelho = "Braga"
+        });
         OnSelecionar.InvokeAsync();
     }
+
+    private void RemoverTaxa(Taxa taxa)
+    {
+        Taxas.Remove(taxa);
+        PaginaAtual = Math.Min(PaginaAtual, TotalPaginas);
+        OnSelecionar.InvokeAsync();
+    }
+
+    private void MudarPagina(int pagina)
+    {
+        if (pagina >= 1 && pagina <= TotalPaginas)
+            PaginaAtual = pagina;
+    }
+
+    private void AlterarItensPorPagina(ChangeEventArgs e)
+    {
+        ItensPorPagina = int.Parse(e.Value!.ToString()!);
+        PaginaAtual = 1;
+    }
 }
+

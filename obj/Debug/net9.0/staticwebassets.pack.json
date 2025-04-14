@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\DesafioAxians.styles.css"
     },
     {
+      "Id": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\wwwroot\\Icons\\Complete.png",
+      "PackagePath": "staticwebassets\\Icons\\Complete.png"
+    },
+    {
       "Id": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\wwwroot\\Icons\\Gear.png",
       "PackagePath": "staticwebassets\\Icons\\Gear.png"
     },
@@ -21,8 +25,20 @@
       "PackagePath": "staticwebassets\\Icons\\Inbox.png"
     },
     {
+      "Id": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\wwwroot\\Icons\\Inprogess.png",
+      "PackagePath": "staticwebassets\\Icons\\Inprogess.png"
+    },
+    {
+      "Id": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\wwwroot\\Icons\\Is-Active.png",
+      "PackagePath": "staticwebassets\\Icons\\Is-Active.png"
+    },
+    {
       "Id": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\wwwroot\\Icons\\Search-Header.png",
       "PackagePath": "staticwebassets\\Icons\\Search-Header.png"
+    },
+    {
+      "Id": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\wwwroot\\Icons\\Tocomplete.png",
+      "PackagePath": "staticwebassets\\Icons\\Tocomplete.png"
     },
     {
       "Id": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\wwwroot\\Icons\\arrow-left.png",
