@@ -4,25 +4,33 @@
 <FormActions />
 <div class="container-fluid mt-3">
     <div class="row">
-        <div class="col-md-3 col-lg-2">
+        <!-- Sidebar -->
+        <div class="col-12 col-md-4 col-lg-3 mb-3">
             <Sidebar CurrentStep="@currentStep" OnStepChange="SetCurrentStep" />
         </div>
 
-        <div class="col-md-9 col-lg-10">
-            <div class="d-flex justify-content-between align-items-center mb-4">
+        <!-- Conteúdo -->
+        <div class="col-12 col-md-8 col-lg-9">
+            <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-2">
                 <h4 class="mb-0">Opção @currentStep</h4>
 
-                <div class="d-flex">
+                <div>
                     <button class="btn btn-light me-2">&lt; Anterior</button>
                     <button class="btn btn-light">Seguinte &gt;</button>
                 </div>
             </div>
-            <TaxForm />
 
+            <TaxForm />
             <TaxTable Taxas="@taxas" OnSelecionar="AtualizarSelecao" />
         </div>
     </div>
+
+    <FooterActions
+        Selecionadas="@taxasSelecionadas"
+        OnCancelar="OnCancelar"
+        OnEliminar="OnEliminar" />
 </div>
+
 
 <!-- Barra Inferior -->
 <FooterActions 

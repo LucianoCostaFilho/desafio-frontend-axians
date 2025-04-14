@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "8tEiGJ6oGbYS1fg7o8HTk3jHFgmLekpk725fPPMlDBE=",
+  "Hash": "0jwu54HZMjvRKBHlCDsyOfThbdKmC0SPAxV0KAOqB2M=",
   "Source": "DesafioAxians",
   "BasePath": "/",
   "Mode": "Root",
@@ -31,8 +31,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "manifest",
-      "Fingerprint": "54okkssisn",
-      "Integrity": "64S4QgXWGkePUpmV0jZaBY7rTIhAjztk1DotMxdScj0=",
+      "Fingerprint": "267yksl4ot",
+      "Integrity": "NtOLFbdmLYDuSjWHvnfJlqVgiseokAXkzETjOQell1s=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net9.0\\blazor.boot.json"
@@ -73,8 +73,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "symbol",
-      "Fingerprint": "pxkyagjy6g",
-      "Integrity": "fdjbqFA7GGIsRKytIU9eiwQ5boW1UxAytk+RBAuheow=",
+      "Fingerprint": "xpahd96al7",
+      "Integrity": "hSET3XC+eg0/aKelEb9pAn/M8aLObZgOsy+2qHuOKEk=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net9.0\\DesafioAxians.pdb"
@@ -94,8 +94,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "runtime",
-      "Fingerprint": "gd1dip34oi",
-      "Integrity": "zDHp+mJ/Za+/+XPPyB0HdiL4ebhsPn5FpfPp9KXNCio=",
+      "Fingerprint": "8pd7cwdz7a",
+      "Integrity": "HN1SEYAIN80UydDlIQ3GRQLwQLbtOjhlZTC9rxuhW5Y=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\obj\\Debug\\net9.0\\webcil\\DesafioAxians.wasm"
@@ -7472,12 +7472,12 @@
       "OriginalItemSpec": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.Xml.Linq.wasm"
     },
     {
-      "Identity": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\obj\\Debug\\net9.0\\compressed\\ly22ozjraf-gd1dip34oi.gz",
+      "Identity": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\obj\\Debug\\net9.0\\compressed\\ly22ozjraf-8pd7cwdz7a.gz",
       "SourceId": "DesafioAxians",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/DesafioAxians#[.{fingerprint=gd1dip34oi}]!.wasm.gz",
+      "RelativePath": "_framework/DesafioAxians#[.{fingerprint=8pd7cwdz7a}]!.wasm.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -7486,8 +7486,8 @@
       "RelatedAsset": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\bin\\Debug\\net9.0\\wwwroot\\_framework\\DesafioAxians.wasm",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "xivlbs8ni9",
-      "Integrity": "J1KmJuMEimDkjcQzOwh3+bu3MUStW9dCZGi36D+FI0E=",
+      "Fingerprint": "ra86c8qxh6",
+      "Integrity": "fQTsiLciweqk0FDBaSTY9DfuFliSzv1OQK3I/OgUYa8=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\bin\\Debug\\net9.0\\wwwroot\\_framework\\DesafioAxians.wasm"
@@ -7661,7 +7661,7 @@
       "OriginalItemSpec": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.Console.wasm"
     },
     {
-      "Identity": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\obj\\Debug\\net9.0\\compressed\\njq8od8d8s-54okkssisn.gz",
+      "Identity": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\obj\\Debug\\net9.0\\compressed\\njq8od8d8s-267yksl4ot.gz",
       "SourceId": "DesafioAxians",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\obj\\Debug\\net9.0\\compressed\\",
@@ -7675,8 +7675,8 @@
       "RelatedAsset": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\bin\\Debug\\net9.0\\wwwroot\\_framework\\blazor.boot.json",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "oa6hrkmsc8",
-      "Integrity": "IGUb4QkAL0dqi84Qn457BvtAwBitgkK+48mMjj0As8c=",
+      "Fingerprint": "zzkp6suqfh",
+      "Integrity": "cbOA/Iq9K2iG/NV0LN367OLCk4u+a4dejvyhLO1uiDA=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\bin\\Debug\\net9.0\\wwwroot\\_framework\\blazor.boot.json"
@@ -9446,12 +9446,12 @@
       "OriginalItemSpec": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.Reflection.DispatchProxy.wasm"
     },
     {
-      "Identity": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\obj\\Debug\\net9.0\\compressed\\yj0ry9sfin-pxkyagjy6g.gz",
+      "Identity": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\obj\\Debug\\net9.0\\compressed\\yj0ry9sfin-xpahd96al7.gz",
       "SourceId": "DesafioAxians",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/DesafioAxians#[.{fingerprint=pxkyagjy6g}]!.pdb.gz",
+      "RelativePath": "_framework/DesafioAxians#[.{fingerprint=xpahd96al7}]!.pdb.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -9460,8 +9460,8 @@
       "RelatedAsset": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\bin\\Debug\\net9.0\\wwwroot\\_framework\\DesafioAxians.pdb",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "oalzqb0rz4",
-      "Integrity": "cIOD4sZJx6zopfdXNnB3+yEq8vsd1oeq+PASjXqWGcU=",
+      "Fingerprint": "s41y0mvvzm",
+      "Integrity": "PAI6znFuq7YyXKW22Peop2x+5d96iCYVPbL87hRkyn8=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\bin\\Debug\\net9.0\\wwwroot\\_framework\\DesafioAxians.pdb"
@@ -9551,12 +9551,12 @@
       "OriginalItemSpec": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\obj\\Debug\\net9.0\\compressed\\yy44wmaekp-vmzqt8gkl9.gz",
+      "Identity": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\obj\\Debug\\net9.0\\compressed\\yy44wmaekp-f7ykk1hsof.gz",
       "SourceId": "DesafioAxians",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "css/app#[.{fingerprint=vmzqt8gkl9}]?.css.gz",
+      "RelativePath": "css/app#[.{fingerprint=f7ykk1hsof}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -9565,8 +9565,8 @@
       "RelatedAsset": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\wwwroot\\css\\app.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "tut538z8x4",
-      "Integrity": "ZVmIi2UhC0UBNVfeTelYtQsbb7Fs3LxrezSmUfPnbew=",
+      "Fingerprint": "4imrhbgz79",
+      "Integrity": "VNgUgucd6FSQseb3rcBsBsgACuKgKHE9d9N449yAqUk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\wwwroot\\css\\app.css"
@@ -9691,8 +9691,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "vmzqt8gkl9",
-      "Integrity": "55M242mfISIof6GBX6KZji5ParVs9fPBbLtTNx7xNzc=",
+      "Fingerprint": "f7ykk1hsof",
+      "Integrity": "1c1CtN/twtu0XHL189KCFu8RgH3b285Dq7KolqKuwto=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\app.css"
@@ -10886,7 +10886,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "39450"
+          "Value": "39197"
         },
         {
           "Name": "Content-Type",
@@ -10894,7 +10894,46 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"64S4QgXWGkePUpmV0jZaBY7rTIhAjztk1DotMxdScj0=\""
+          "Value": "\"NtOLFbdmLYDuSjWHvnfJlqVgiseokAXkzETjOQell1s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Apr 2025 10:49:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-NtOLFbdmLYDuSjWHvnfJlqVgiseokAXkzETjOQell1s="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/blazor.boot.json",
+      "AssetFile": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\obj\\Debug\\net9.0\\compressed\\njq8od8d8s-267yksl4ot.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000081208381"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12313"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cbOA/Iq9K2iG/NV0LN367OLCk4u+a4dejvyhLO1uiDA=\""
         },
         {
           "Name": "Last-Modified",
@@ -10903,45 +10942,6 @@
         {
           "Name": "Cache-Control",
           "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-64S4QgXWGkePUpmV0jZaBY7rTIhAjztk1DotMxdScj0="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/blazor.boot.json",
-      "AssetFile": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\obj\\Debug\\net9.0\\compressed\\njq8od8d8s-54okkssisn.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000081175420"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "12318"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"IGUb4QkAL0dqi84Qn457BvtAwBitgkK+48mMjj0As8c=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 14 Apr 2025 08:52:34 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
         },
         {
           "Name": "Content-Encoding",
@@ -10957,19 +10957,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"64S4QgXWGkePUpmV0jZaBY7rTIhAjztk1DotMxdScj0=\""
+          "Value": "W/\"NtOLFbdmLYDuSjWHvnfJlqVgiseokAXkzETjOQell1s=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-64S4QgXWGkePUpmV0jZaBY7rTIhAjztk1DotMxdScj0="
+          "Value": "sha256-NtOLFbdmLYDuSjWHvnfJlqVgiseokAXkzETjOQell1s="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json.gz",
-      "AssetFile": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\obj\\Debug\\net9.0\\compressed\\njq8od8d8s-54okkssisn.gz",
+      "AssetFile": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\obj\\Debug\\net9.0\\compressed\\njq8od8d8s-267yksl4ot.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10978,7 +10978,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12318"
+          "Value": "12313"
         },
         {
           "Name": "Content-Type",
@@ -10986,11 +10986,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"IGUb4QkAL0dqi84Qn457BvtAwBitgkK+48mMjj0As8c=\""
+          "Value": "\"cbOA/Iq9K2iG/NV0LN367OLCk4u+a4dejvyhLO1uiDA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 14 Apr 2025 08:52:34 GMT"
+          "Value": "Mon, 14 Apr 2025 09:54:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11008,7 +11008,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-IGUb4QkAL0dqi84Qn457BvtAwBitgkK+48mMjj0As8c="
+          "Value": "sha256-cbOA/Iq9K2iG/NV0LN367OLCk4u+a4dejvyhLO1uiDA="
         }
       ]
     },
@@ -11150,7 +11150,7 @@
       ]
     },
     {
-      "Route": "_framework/DesafioAxians.gd1dip34oi.wasm",
+      "Route": "_framework/DesafioAxians.8pd7cwdz7a.wasm",
       "AssetFile": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\bin\\Debug\\net9.0\\wwwroot\\_framework\\DesafioAxians.wasm",
       "Selectors": [],
       "ResponseHeaders": [
@@ -11160,7 +11160,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "29461"
+          "Value": "30485"
         },
         {
           "Name": "Content-Type",
@@ -11168,11 +11168,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"zDHp+mJ/Za+/+XPPyB0HdiL4ebhsPn5FpfPp9KXNCio=\""
+          "Value": "\"HN1SEYAIN80UydDlIQ3GRQLwQLbtOjhlZTC9rxuhW5Y=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 14 Apr 2025 09:54:28 GMT"
+          "Value": "Mon, 14 Apr 2025 10:49:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11182,7 +11182,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "gd1dip34oi"
+          "Value": "8pd7cwdz7a"
         },
         {
           "Name": "label",
@@ -11190,18 +11190,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-zDHp+mJ/Za+/+XPPyB0HdiL4ebhsPn5FpfPp9KXNCio="
+          "Value": "sha256-HN1SEYAIN80UydDlIQ3GRQLwQLbtOjhlZTC9rxuhW5Y="
         }
       ]
     },
     {
-      "Route": "_framework/DesafioAxians.gd1dip34oi.wasm",
-      "AssetFile": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\obj\\Debug\\net9.0\\compressed\\ly22ozjraf-gd1dip34oi.gz",
+      "Route": "_framework/DesafioAxians.8pd7cwdz7a.wasm",
+      "AssetFile": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\obj\\Debug\\net9.0\\compressed\\ly22ozjraf-8pd7cwdz7a.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000091315862"
+          "Quality": "0.000089718285"
         }
       ],
       "ResponseHeaders": [
@@ -11211,15 +11211,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "10950"
+          "Value": "11145"
         },
         {
           "Name": "ETag",
-          "Value": "\"J1KmJuMEimDkjcQzOwh3+bu3MUStW9dCZGi36D+FI0E=\""
+          "Value": "\"fQTsiLciweqk0FDBaSTY9DfuFliSzv1OQK3I/OgUYa8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 14 Apr 2025 09:54:29 GMT"
+          "Value": "Mon, 14 Apr 2025 10:49:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11239,13 +11239,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"zDHp+mJ/Za+/+XPPyB0HdiL4ebhsPn5FpfPp9KXNCio=\""
+          "Value": "W/\"HN1SEYAIN80UydDlIQ3GRQLwQLbtOjhlZTC9rxuhW5Y=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "gd1dip34oi"
+          "Value": "8pd7cwdz7a"
         },
         {
           "Name": "label",
@@ -11253,13 +11253,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-zDHp+mJ/Za+/+XPPyB0HdiL4ebhsPn5FpfPp9KXNCio="
+          "Value": "sha256-HN1SEYAIN80UydDlIQ3GRQLwQLbtOjhlZTC9rxuhW5Y="
         }
       ]
     },
     {
-      "Route": "_framework/DesafioAxians.gd1dip34oi.wasm.gz",
-      "AssetFile": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\obj\\Debug\\net9.0\\compressed\\ly22ozjraf-gd1dip34oi.gz",
+      "Route": "_framework/DesafioAxians.8pd7cwdz7a.wasm.gz",
+      "AssetFile": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\obj\\Debug\\net9.0\\compressed\\ly22ozjraf-8pd7cwdz7a.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -11268,7 +11268,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "10950"
+          "Value": "11145"
         },
         {
           "Name": "Content-Type",
@@ -11276,11 +11276,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"J1KmJuMEimDkjcQzOwh3+bu3MUStW9dCZGi36D+FI0E=\""
+          "Value": "\"fQTsiLciweqk0FDBaSTY9DfuFliSzv1OQK3I/OgUYa8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 14 Apr 2025 09:54:29 GMT"
+          "Value": "Mon, 14 Apr 2025 10:49:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11298,7 +11298,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "gd1dip34oi"
+          "Value": "8pd7cwdz7a"
         },
         {
           "Name": "label",
@@ -11306,7 +11306,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-J1KmJuMEimDkjcQzOwh3+bu3MUStW9dCZGi36D+FI0E="
+          "Value": "sha256-fQTsiLciweqk0FDBaSTY9DfuFliSzv1OQK3I/OgUYa8="
         }
       ]
     },
@@ -11321,7 +11321,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "30800"
+          "Value": "31108"
         },
         {
           "Name": "Content-Type",
@@ -11329,11 +11329,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"fdjbqFA7GGIsRKytIU9eiwQ5boW1UxAytk+RBAuheow=\""
+          "Value": "\"hSET3XC+eg0/aKelEb9pAn/M8aLObZgOsy+2qHuOKEk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 14 Apr 2025 09:54:28 GMT"
+          "Value": "Mon, 14 Apr 2025 10:49:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11343,18 +11343,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-fdjbqFA7GGIsRKytIU9eiwQ5boW1UxAytk+RBAuheow="
+          "Value": "sha256-hSET3XC+eg0/aKelEb9pAn/M8aLObZgOsy+2qHuOKEk="
         }
       ]
     },
     {
       "Route": "_framework/DesafioAxians.pdb",
-      "AssetFile": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\obj\\Debug\\net9.0\\compressed\\yj0ry9sfin-pxkyagjy6g.gz",
+      "AssetFile": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\obj\\Debug\\net9.0\\compressed\\yj0ry9sfin-xpahd96al7.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000043005204"
+          "Quality": "0.000042529664"
         }
       ],
       "ResponseHeaders": [
@@ -11364,15 +11364,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "23252"
+          "Value": "23512"
         },
         {
           "Name": "ETag",
-          "Value": "\"cIOD4sZJx6zopfdXNnB3+yEq8vsd1oeq+PASjXqWGcU=\""
+          "Value": "\"PAI6znFuq7YyXKW22Peop2x+5d96iCYVPbL87hRkyn8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 14 Apr 2025 09:54:29 GMT"
+          "Value": "Mon, 14 Apr 2025 10:49:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11392,19 +11392,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"fdjbqFA7GGIsRKytIU9eiwQ5boW1UxAytk+RBAuheow=\""
+          "Value": "W/\"hSET3XC+eg0/aKelEb9pAn/M8aLObZgOsy+2qHuOKEk=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-fdjbqFA7GGIsRKytIU9eiwQ5boW1UxAytk+RBAuheow="
+          "Value": "sha256-hSET3XC+eg0/aKelEb9pAn/M8aLObZgOsy+2qHuOKEk="
         }
       ]
     },
     {
       "Route": "_framework/DesafioAxians.pdb.gz",
-      "AssetFile": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\obj\\Debug\\net9.0\\compressed\\yj0ry9sfin-pxkyagjy6g.gz",
+      "AssetFile": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\obj\\Debug\\net9.0\\compressed\\yj0ry9sfin-xpahd96al7.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -11413,7 +11413,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "23252"
+          "Value": "23512"
         },
         {
           "Name": "Content-Type",
@@ -11421,11 +11421,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"cIOD4sZJx6zopfdXNnB3+yEq8vsd1oeq+PASjXqWGcU=\""
+          "Value": "\"PAI6znFuq7YyXKW22Peop2x+5d96iCYVPbL87hRkyn8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 14 Apr 2025 09:54:29 GMT"
+          "Value": "Mon, 14 Apr 2025 10:49:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11443,168 +11443,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-cIOD4sZJx6zopfdXNnB3+yEq8vsd1oeq+PASjXqWGcU="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/DesafioAxians.pxkyagjy6g.pdb",
-      "AssetFile": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\bin\\Debug\\net9.0\\wwwroot\\_framework\\DesafioAxians.pdb",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "30800"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"fdjbqFA7GGIsRKytIU9eiwQ5boW1UxAytk+RBAuheow=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 14 Apr 2025 09:54:28 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "pxkyagjy6g"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/DesafioAxians.pdb"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-fdjbqFA7GGIsRKytIU9eiwQ5boW1UxAytk+RBAuheow="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/DesafioAxians.pxkyagjy6g.pdb",
-      "AssetFile": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\obj\\Debug\\net9.0\\compressed\\yj0ry9sfin-pxkyagjy6g.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000043005204"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "23252"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"cIOD4sZJx6zopfdXNnB3+yEq8vsd1oeq+PASjXqWGcU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 14 Apr 2025 09:54:29 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"fdjbqFA7GGIsRKytIU9eiwQ5boW1UxAytk+RBAuheow=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "pxkyagjy6g"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/DesafioAxians.pdb"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-fdjbqFA7GGIsRKytIU9eiwQ5boW1UxAytk+RBAuheow="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/DesafioAxians.pxkyagjy6g.pdb.gz",
-      "AssetFile": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\obj\\Debug\\net9.0\\compressed\\yj0ry9sfin-pxkyagjy6g.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "23252"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"cIOD4sZJx6zopfdXNnB3+yEq8vsd1oeq+PASjXqWGcU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 14 Apr 2025 09:54:29 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "pxkyagjy6g"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/DesafioAxians.pdb.gz"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-cIOD4sZJx6zopfdXNnB3+yEq8vsd1oeq+PASjXqWGcU="
+          "Value": "sha256-PAI6znFuq7YyXKW22Peop2x+5d96iCYVPbL87hRkyn8="
         }
       ]
     },
@@ -11619,7 +11458,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "29461"
+          "Value": "30485"
         },
         {
           "Name": "Content-Type",
@@ -11627,11 +11466,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"zDHp+mJ/Za+/+XPPyB0HdiL4ebhsPn5FpfPp9KXNCio=\""
+          "Value": "\"HN1SEYAIN80UydDlIQ3GRQLwQLbtOjhlZTC9rxuhW5Y=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 14 Apr 2025 09:54:28 GMT"
+          "Value": "Mon, 14 Apr 2025 10:49:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11641,18 +11480,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-zDHp+mJ/Za+/+XPPyB0HdiL4ebhsPn5FpfPp9KXNCio="
+          "Value": "sha256-HN1SEYAIN80UydDlIQ3GRQLwQLbtOjhlZTC9rxuhW5Y="
         }
       ]
     },
     {
       "Route": "_framework/DesafioAxians.wasm",
-      "AssetFile": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\obj\\Debug\\net9.0\\compressed\\ly22ozjraf-gd1dip34oi.gz",
+      "AssetFile": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\obj\\Debug\\net9.0\\compressed\\ly22ozjraf-8pd7cwdz7a.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000091315862"
+          "Quality": "0.000089718285"
         }
       ],
       "ResponseHeaders": [
@@ -11662,15 +11501,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "10950"
+          "Value": "11145"
         },
         {
           "Name": "ETag",
-          "Value": "\"J1KmJuMEimDkjcQzOwh3+bu3MUStW9dCZGi36D+FI0E=\""
+          "Value": "\"fQTsiLciweqk0FDBaSTY9DfuFliSzv1OQK3I/OgUYa8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 14 Apr 2025 09:54:29 GMT"
+          "Value": "Mon, 14 Apr 2025 10:49:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11690,19 +11529,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"zDHp+mJ/Za+/+XPPyB0HdiL4ebhsPn5FpfPp9KXNCio=\""
+          "Value": "W/\"HN1SEYAIN80UydDlIQ3GRQLwQLbtOjhlZTC9rxuhW5Y=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-zDHp+mJ/Za+/+XPPyB0HdiL4ebhsPn5FpfPp9KXNCio="
+          "Value": "sha256-HN1SEYAIN80UydDlIQ3GRQLwQLbtOjhlZTC9rxuhW5Y="
         }
       ]
     },
     {
       "Route": "_framework/DesafioAxians.wasm.gz",
-      "AssetFile": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\obj\\Debug\\net9.0\\compressed\\ly22ozjraf-gd1dip34oi.gz",
+      "AssetFile": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\obj\\Debug\\net9.0\\compressed\\ly22ozjraf-8pd7cwdz7a.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -11711,7 +11550,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "10950"
+          "Value": "11145"
         },
         {
           "Name": "Content-Type",
@@ -11719,11 +11558,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"J1KmJuMEimDkjcQzOwh3+bu3MUStW9dCZGi36D+FI0E=\""
+          "Value": "\"fQTsiLciweqk0FDBaSTY9DfuFliSzv1OQK3I/OgUYa8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 14 Apr 2025 09:54:29 GMT"
+          "Value": "Mon, 14 Apr 2025 10:49:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11741,7 +11580,168 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-J1KmJuMEimDkjcQzOwh3+bu3MUStW9dCZGi36D+FI0E="
+          "Value": "sha256-fQTsiLciweqk0FDBaSTY9DfuFliSzv1OQK3I/OgUYa8="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/DesafioAxians.xpahd96al7.pdb",
+      "AssetFile": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\bin\\Debug\\net9.0\\wwwroot\\_framework\\DesafioAxians.pdb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "31108"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hSET3XC+eg0/aKelEb9pAn/M8aLObZgOsy+2qHuOKEk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Apr 2025 10:49:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xpahd96al7"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/DesafioAxians.pdb"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hSET3XC+eg0/aKelEb9pAn/M8aLObZgOsy+2qHuOKEk="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/DesafioAxians.xpahd96al7.pdb",
+      "AssetFile": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\obj\\Debug\\net9.0\\compressed\\yj0ry9sfin-xpahd96al7.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000042529664"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "23512"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PAI6znFuq7YyXKW22Peop2x+5d96iCYVPbL87hRkyn8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Apr 2025 10:49:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"hSET3XC+eg0/aKelEb9pAn/M8aLObZgOsy+2qHuOKEk=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xpahd96al7"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/DesafioAxians.pdb"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hSET3XC+eg0/aKelEb9pAn/M8aLObZgOsy+2qHuOKEk="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/DesafioAxians.xpahd96al7.pdb.gz",
+      "AssetFile": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\obj\\Debug\\net9.0\\compressed\\yj0ry9sfin-xpahd96al7.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "23512"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PAI6znFuq7YyXKW22Peop2x+5d96iCYVPbL87hRkyn8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Apr 2025 10:49:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xpahd96al7"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/DesafioAxians.pdb.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-PAI6znFuq7YyXKW22Peop2x+5d96iCYVPbL87hRkyn8="
         }
       ]
     },
@@ -71347,12 +71347,12 @@
     },
     {
       "Route": "css/app.css",
-      "AssetFile": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\obj\\Debug\\net9.0\\compressed\\yy44wmaekp-vmzqt8gkl9.gz",
+      "AssetFile": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\obj\\Debug\\net9.0\\compressed\\yy44wmaekp-f7ykk1hsof.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000451059991"
+          "Quality": "0.000420344683"
         }
       ],
       "ResponseHeaders": [
@@ -71362,15 +71362,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2216"
+          "Value": "2378"
         },
         {
           "Name": "ETag",
-          "Value": "\"ZVmIi2UhC0UBNVfeTelYtQsbb7Fs3LxrezSmUfPnbew=\""
+          "Value": "\"VNgUgucd6FSQseb3rcBsBsgACuKgKHE9d9N449yAqUk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 14 Apr 2025 08:47:49 GMT"
+          "Value": "Mon, 14 Apr 2025 10:48:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -71390,13 +71390,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"55M242mfISIof6GBX6KZji5ParVs9fPBbLtTNx7xNzc=\""
+          "Value": "W/\"1c1CtN/twtu0XHL189KCFu8RgH3b285Dq7KolqKuwto=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-55M242mfISIof6GBX6KZji5ParVs9fPBbLtTNx7xNzc="
+          "Value": "sha256-1c1CtN/twtu0XHL189KCFu8RgH3b285Dq7KolqKuwto="
         }
       ]
     },
@@ -71411,7 +71411,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4853"
+          "Value": "5397"
         },
         {
           "Name": "Content-Type",
@@ -71419,11 +71419,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"55M242mfISIof6GBX6KZji5ParVs9fPBbLtTNx7xNzc=\""
+          "Value": "\"1c1CtN/twtu0XHL189KCFu8RgH3b285Dq7KolqKuwto=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 14 Apr 2025 08:47:49 GMT"
+          "Value": "Mon, 14 Apr 2025 10:48:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -71433,13 +71433,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-55M242mfISIof6GBX6KZji5ParVs9fPBbLtTNx7xNzc="
+          "Value": "sha256-1c1CtN/twtu0XHL189KCFu8RgH3b285Dq7KolqKuwto="
         }
       ]
     },
     {
       "Route": "css/app.css.gz",
-      "AssetFile": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\obj\\Debug\\net9.0\\compressed\\yy44wmaekp-vmzqt8gkl9.gz",
+      "AssetFile": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\obj\\Debug\\net9.0\\compressed\\yy44wmaekp-f7ykk1hsof.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -71448,7 +71448,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2216"
+          "Value": "2378"
         },
         {
           "Name": "Content-Type",
@@ -71456,11 +71456,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ZVmIi2UhC0UBNVfeTelYtQsbb7Fs3LxrezSmUfPnbew=\""
+          "Value": "\"VNgUgucd6FSQseb3rcBsBsgACuKgKHE9d9N449yAqUk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 14 Apr 2025 08:47:49 GMT"
+          "Value": "Mon, 14 Apr 2025 10:48:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -71478,18 +71478,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-ZVmIi2UhC0UBNVfeTelYtQsbb7Fs3LxrezSmUfPnbew="
+          "Value": "sha256-VNgUgucd6FSQseb3rcBsBsgACuKgKHE9d9N449yAqUk="
         }
       ]
     },
     {
-      "Route": "css/app.vmzqt8gkl9.css",
-      "AssetFile": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\obj\\Debug\\net9.0\\compressed\\yy44wmaekp-vmzqt8gkl9.gz",
+      "Route": "css/app.f7ykk1hsof.css",
+      "AssetFile": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\obj\\Debug\\net9.0\\compressed\\yy44wmaekp-f7ykk1hsof.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000451059991"
+          "Quality": "0.000420344683"
         }
       ],
       "ResponseHeaders": [
@@ -71499,15 +71499,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2216"
+          "Value": "2378"
         },
         {
           "Name": "ETag",
-          "Value": "\"ZVmIi2UhC0UBNVfeTelYtQsbb7Fs3LxrezSmUfPnbew=\""
+          "Value": "\"VNgUgucd6FSQseb3rcBsBsgACuKgKHE9d9N449yAqUk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 14 Apr 2025 08:47:49 GMT"
+          "Value": "Mon, 14 Apr 2025 10:48:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -71527,13 +71527,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"55M242mfISIof6GBX6KZji5ParVs9fPBbLtTNx7xNzc=\""
+          "Value": "W/\"1c1CtN/twtu0XHL189KCFu8RgH3b285Dq7KolqKuwto=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "vmzqt8gkl9"
+          "Value": "f7ykk1hsof"
         },
         {
           "Name": "label",
@@ -71541,12 +71541,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-55M242mfISIof6GBX6KZji5ParVs9fPBbLtTNx7xNzc="
+          "Value": "sha256-1c1CtN/twtu0XHL189KCFu8RgH3b285Dq7KolqKuwto="
         }
       ]
     },
     {
-      "Route": "css/app.vmzqt8gkl9.css",
+      "Route": "css/app.f7ykk1hsof.css",
       "AssetFile": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\wwwroot\\css\\app.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -71556,7 +71556,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4853"
+          "Value": "5397"
         },
         {
           "Name": "Content-Type",
@@ -71564,11 +71564,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"55M242mfISIof6GBX6KZji5ParVs9fPBbLtTNx7xNzc=\""
+          "Value": "\"1c1CtN/twtu0XHL189KCFu8RgH3b285Dq7KolqKuwto=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 14 Apr 2025 08:47:49 GMT"
+          "Value": "Mon, 14 Apr 2025 10:48:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -71578,7 +71578,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "vmzqt8gkl9"
+          "Value": "f7ykk1hsof"
         },
         {
           "Name": "label",
@@ -71586,13 +71586,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-55M242mfISIof6GBX6KZji5ParVs9fPBbLtTNx7xNzc="
+          "Value": "sha256-1c1CtN/twtu0XHL189KCFu8RgH3b285Dq7KolqKuwto="
         }
       ]
     },
     {
-      "Route": "css/app.vmzqt8gkl9.css.gz",
-      "AssetFile": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\obj\\Debug\\net9.0\\compressed\\yy44wmaekp-vmzqt8gkl9.gz",
+      "Route": "css/app.f7ykk1hsof.css.gz",
+      "AssetFile": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\obj\\Debug\\net9.0\\compressed\\yy44wmaekp-f7ykk1hsof.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -71601,7 +71601,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2216"
+          "Value": "2378"
         },
         {
           "Name": "Content-Type",
@@ -71609,11 +71609,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ZVmIi2UhC0UBNVfeTelYtQsbb7Fs3LxrezSmUfPnbew=\""
+          "Value": "\"VNgUgucd6FSQseb3rcBsBsgACuKgKHE9d9N449yAqUk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 14 Apr 2025 08:47:49 GMT"
+          "Value": "Mon, 14 Apr 2025 10:48:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -71631,7 +71631,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "vmzqt8gkl9"
+          "Value": "f7ykk1hsof"
         },
         {
           "Name": "label",
@@ -71639,7 +71639,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-ZVmIi2UhC0UBNVfeTelYtQsbb7Fs3LxrezSmUfPnbew="
+          "Value": "sha256-VNgUgucd6FSQseb3rcBsBsgACuKgKHE9d9N449yAqUk="
         }
       ]
     },

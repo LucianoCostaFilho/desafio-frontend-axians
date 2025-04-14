@@ -1,19 +1,29 @@
-<div class="list-group">
+<div class="sidebar-wrapper">
     @for (int i = 1; i <= 12; i++)
     {
-        <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center @(CurrentStep == i ? "active" : "")"
-           @onclick="() => OnStepChange.InvokeAsync(i)">
-            Opção @i
+        var isActive = CurrentStep == i;
+        var isCompleted = i < CurrentStep;
 
-            @if (CurrentStep == i)
+        <div class="sidebar-option @(isActive ? "active" : "")"
+             @onclick="() => OnStepChange.InvokeAsync(i)">
+            <span class="option-text">Opção @i</span>
+
+            @if (isActive)
             {
-                <span class="spinner-border spinner-border-sm text-primary"></span>
+                <img src="Icons/arrow-left.png" width="24" />
+                <i class="bi bi-arrow-repeat text-purple"></i>
             }
-            else if (i < CurrentStep)
+            else if (isCompleted)
             {
+                <img src="Icons/arrow-left.png" width="24" />
                 <i class="bi bi-check-circle-fill text-success"></i>
             }
-        </a>
+            else
+            {
+                <img src="Icons/arrow-left.png" width="24" />
+                <i class="bi bi-circle text-muted-gray"></i>
+            }
+        </div>
     }
 </div>
 

@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "DesafioAxians",
   "resources": {
-    "hash": "sha256-gGpWHPJG65crnDdLDSZXvW3BLkIbRfjS53cQgMhPl7o=",
+    "hash": "sha256-/FFVitieMHYUiEI2i+TNO+jXs2L74vKxO2h9HuIEarg=",
     "fingerprinting": {
       "Microsoft.AspNetCore.Authorization.gf26ou9jj9.wasm": "Microsoft.AspNetCore.Authorization.wasm",
       "Microsoft.AspNetCore.Components.v3fd2n5hlr.wasm": "Microsoft.AspNetCore.Components.wasm",
@@ -201,8 +201,8 @@
       "icudt_CJK.tjcz0u77k5.dat": "icudt_CJK.dat",
       "icudt_EFIGS.tptq2av103.dat": "icudt_EFIGS.dat",
       "icudt_no_CJK.lfu7j35m59.dat": "icudt_no_CJK.dat",
-      "DesafioAxians.gd1dip34oi.wasm": "DesafioAxians.wasm",
-      "DesafioAxians.pxkyagjy6g.pdb": "DesafioAxians.pdb"
+      "DesafioAxians.8pd7cwdz7a.wasm": "DesafioAxians.wasm",
+      "DesafioAxians.xpahd96al7.pdb": "DesafioAxians.pdb"
     },
     "jsModuleNative": {
       "dotnet.native.hvg7u8bimp.js": "sha256-LX9rFEWGVxhkOkAVPG0w5RxPwzPBlEUz6dQNjWS7M+M="
@@ -412,10 +412,10 @@
       "WindowsBase.5lai2eowco.wasm": "sha256-GcDi5293y2A7oSiFYTbBTUe0d+ISbvgeel4ZNd8KkPM=",
       "mscorlib.wzkfrp7u5k.wasm": "sha256-9PjsU0gaxxz5Vyw++p9DeYUWLsaXbaMS2RbX6wmTUmk=",
       "netstandard.d82br99ghv.wasm": "sha256-DS8keXxU4eQpa1kIoiFxOA2Ii2g9hoNWSaVi8F8AnIE=",
-      "DesafioAxians.gd1dip34oi.wasm": "sha256-zDHp+mJ/Za+/+XPPyB0HdiL4ebhsPn5FpfPp9KXNCio="
+      "DesafioAxians.8pd7cwdz7a.wasm": "sha256-HN1SEYAIN80UydDlIQ3GRQLwQLbtOjhlZTC9rxuhW5Y="
     },
     "pdb": {
-      "DesafioAxians.pxkyagjy6g.pdb": "sha256-fdjbqFA7GGIsRKytIU9eiwQ5boW1UxAytk+RBAuheow="
+      "DesafioAxians.xpahd96al7.pdb": "sha256-hSET3XC+eg0/aKelEb9pAn/M8aLObZgOsy+2qHuOKEk="
     }
   },
   "cacheBootResources": true,
