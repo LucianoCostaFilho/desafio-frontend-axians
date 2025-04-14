@@ -120,9 +120,9 @@ code {
 }
 
 .section-box {
+    border-radius: 6px;
     height: 186px;
     background-color: #fff;
-    border-radius: 6px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
@@ -137,19 +137,16 @@ code {
     
 }
 
-.counter-box {
-    height: 152px;
-    background-color: #fff;
-    border-radius: 6px;
-    padding: 20px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-}
-
 .custom-select {
     width: 157px;
     height: 40px;
     font-size: 0.95rem;
-    padding: 6px 12px;
     border-radius: 6px;
 }
 
+.counter-box {
+    height: 152px;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
