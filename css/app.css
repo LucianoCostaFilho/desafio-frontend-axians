@@ -150,3 +150,49 @@ code {
     border-radius: 6px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
+
+.sidebar-wrapper {
+    width: 402px;
+    background-color: white;
+    border-radius: 12px;
+    padding: 16px 0;
+}
+
+.sidebar-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 24px;
+    background-color: transparent;
+    border-left: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.sidebar-option.active {
+    background-color: #F7F9FA;
+    border-left: 2px solid #5B3EE4;
+}
+
+.option-text {
+    text-transform: lowercase;
+    font-size: 1rem;
+    color: #212529;
+}
+
+.sidebar-option.active .option-text {
+    color: #5B3EE4;
+    font-weight: 600;
+}
+
+.text-purple {
+    color: #5B3EE4;
+}
+
+.text-muted-gray {
+    color: #D9D9D9;
+}
+
+.bi {
+    font-size: 1rem;
+}
