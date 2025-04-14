@@ -1,0 +1,50 @@
+<!-- Tipo de Taxa -->
+<div class="section-box mb-4">
+    <label class="form-label section-title">Tipo de taxa</label>
+    <p class="section-subtitle">Adicionar tipo de taxa</p>
+    
+     <select class="form-select custom-select" @bind="SelectedTaxType">
+        <option disabled selected>Selecionar</option>
+        @foreach (var tax in TaxTypes)
+        {
+            <option>@tax</option>
+        }
+    </select>
+
+</div>
+
+<!-- Contar -->
+<div class="counter-box mb-4" style="height: 186px;">
+    <label class="form-label fw-semibold d-block">Contar</label>
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" id="contarSim" value="Sim" />
+        <label class="form-check-label" for="contarSim">Sim</label>
+    </div>
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" id="contarNao" value="Não"  />
+        <label class="form-check-label" for="contarNao">Não</label>
+    </div>
+</div>
+
+<!-- Switch: Taxa por Produto -->
+<div class="section-box">
+    <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" role="switch" id="toggleTax" @bind="TaxaPorProduto">
+        <label class="form-check-label" for="toggleTax">Taxa por Produto</label>
+    </div>
+</div>
+
+@code {
+    private string SelectedTaxType = "NUTS";
+    private string Contar = "Sim";
+    private bool TaxaPorProduto = false;
+
+    private List<string> TaxTypes = new()
+    {
+        "NUTS",
+        "IVA",
+        "ICMS",
+        "ISS",
+        "Outro"
+    };
+}

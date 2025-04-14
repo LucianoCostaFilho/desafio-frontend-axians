@@ -1,0 +1,72 @@
+﻿@page "/"
+@using DesafioAxians.Models
+
+<FormActions />
+<div class="container-fluid mt-3">
+    <div class="row">
+        <div class="col-md-3 col-lg-2">
+            <Sidebar CurrentStep="@currentStep" OnStepChange="SetCurrentStep" />
+        </div>
+
+        <div class="col-md-9 col-lg-10">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h4 class="mb-0">Opção @currentStep</h4>
+
+                <div class="d-flex">
+                    <button class="btn btn-light me-2">&lt; Anterior</button>
+                    <button class="btn btn-light">Seguinte &gt;</button>
+                </div>
+            </div>
+            <TaxForm />
+
+            <TaxTable Taxas="@taxas" OnSelecionar="AtualizarSelecao" />
+        </div>
+    </div>
+</div>
+
+<!-- Barra Inferior -->
+<FooterActions 
+    Selecionadas="@taxasSelecionadas"
+    OnCancelar="OnCancelar"
+    OnEliminar="OnEliminar" />
+
+@code {
+    private int currentStep = 10;
+
+    private List<Taxa> taxas = new()
+    {
+        new("NUTS", 12.5m),
+        new("IVA", 9.8m),
+        new("ICMS", 5.0m),
+        new("ISS", 3.2m),
+    };
+
+    private int taxasSelecionadas => taxas.Count(t => t.Selecionada);
+
+    private Task SetCurrentStep(int step)
+    {
+        currentStep = step;
+        return Task.CompletedTask;
+    }
+
+    private Task AtualizarSelecao()
+    {
+        StateHasChanged();
+        return Task.CompletedTask;
+    }
+
+    private Task OnCancelar()
+    {
+        foreach (var t in taxas)
+        {
+            t.Selecionada = false;
+        }
+        return AtualizarSelecao();
+    }
+
+    private Task OnEliminar()
+    {
+        taxas = taxas.Where(t => !t.Selecionada).ToList();
+        return AtualizarSelecao();
+    }
+}

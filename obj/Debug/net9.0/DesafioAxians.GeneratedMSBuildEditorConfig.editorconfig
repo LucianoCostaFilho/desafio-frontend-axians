@@ -28,16 +28,32 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lucia/Desktop/ProjetoBlazor/DesafioAxians/Pages/Counter.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+[C:/Users/lucia/Desktop/ProjetoBlazor/DesafioAxians/Components/FooterActions.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xGb290ZXJBY3Rpb25zLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lucia/Desktop/ProjetoBlazor/DesafioAxians/Pages/Home.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
+[C:/Users/lucia/Desktop/ProjetoBlazor/DesafioAxians/Components/FormActions.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xGb3JtQWN0aW9ucy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lucia/Desktop/ProjetoBlazor/DesafioAxians/Pages/Weather.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV2VhdGhlci5yYXpvcg==
+[C:/Users/lucia/Desktop/ProjetoBlazor/DesafioAxians/Components/Header.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xIZWFkZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lucia/Desktop/ProjetoBlazor/DesafioAxians/Components/Sidebar.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xTaWRlYmFyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lucia/Desktop/ProjetoBlazor/DesafioAxians/Components/TaxForm.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xUYXhGb3JtLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lucia/Desktop/ProjetoBlazor/DesafioAxians/Components/TaxTable.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xUYXhUYWJsZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lucia/Desktop/ProjetoBlazor/DesafioAxians/Pages/Aviso.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXZpc28ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/lucia/Desktop/ProjetoBlazor/DesafioAxians/_Imports.razor]
@@ -47,7 +63,3 @@ build_metadata.AdditionalFiles.CssScope =
 [C:/Users/lucia/Desktop/ProjetoBlazor/DesafioAxians/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-qd4xvp4yrn
-
-[C:/Users/lucia/Desktop/ProjetoBlazor/DesafioAxians/Layout/NavMenu.razor]
-build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE5hdk1lbnUucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-arwyq74vei

@@ -9,6 +9,34 @@
       "PackagePath": "staticwebassets\\DesafioAxians.styles.css"
     },
     {
+      "Id": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\wwwroot\\Icons\\Gear.png",
+      "PackagePath": "staticwebassets\\Icons\\Gear.png"
+    },
+    {
+      "Id": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\wwwroot\\Icons\\Header-Nav-Menu.png",
+      "PackagePath": "staticwebassets\\Icons\\Header-Nav-Menu.png"
+    },
+    {
+      "Id": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\wwwroot\\Icons\\Inbox.png",
+      "PackagePath": "staticwebassets\\Icons\\Inbox.png"
+    },
+    {
+      "Id": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\wwwroot\\Icons\\Search-Header.png",
+      "PackagePath": "staticwebassets\\Icons\\Search-Header.png"
+    },
+    {
+      "Id": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\wwwroot\\Icons\\arrow-left.png",
+      "PackagePath": "staticwebassets\\Icons\\arrow-left.png"
+    },
+    {
+      "Id": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\wwwroot\\Icons\\disk.png",
+      "PackagePath": "staticwebassets\\Icons\\disk.png"
+    },
+    {
+      "Id": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\wwwroot\\Icons\\pencil-alt.png",
+      "PackagePath": "staticwebassets\\Icons\\pencil-alt.png"
+    },
+    {
       "Id": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },
