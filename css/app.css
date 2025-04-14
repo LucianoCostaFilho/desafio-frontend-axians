@@ -155,18 +155,19 @@ code {
     width: 402px;
     background-color: white;
     border-radius: 12px;
-    padding: 16px 0;
+    height: 600px;
 }
 
 .sidebar-option {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 24px 24px;
+    padding: 24px 24px 24px 24px;
     background-color: transparent;
     border-left: 2px solid transparent;
     cursor: pointer;
     transition: all 0.2s ease;
+    height: 46px;
 }
 
 .sidebar-option.active {
@@ -196,3 +197,52 @@ code {
 .bi {
     font-size: 1rem;
 }
+
+/* Estilo geral da linha */
+.custom-tax-table .table tbody tr {
+    background-color: #E5E7EB !important;
+    margin-bottom: 4px;
+    border-collapse: separate;
+}
+
+/* Arredondar lateral da linha */
+.custom-tax-table .table tbody tr td:first-child {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.custom-tax-table .table tbody tr td:last-child {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+/* Dropdown de itens por página */
+.custom-tax-table select.form-select {
+    color: #6057EE;
+    border: 1px solid #6057EE;
+    width: auto;
+}
+
+/* Botões da paginação */
+.custom-tax-table .btn-icon {
+    background-color: transparent;
+    border: none;
+    color: #6057EE;
+    padding: 4px 8px;
+    font-size: 0.9rem;
+    border-radius: 6px;
+}
+
+.custom-tax-table .btn-icon.active {
+    background-color: #6057EE;
+    color: white;
+    font-weight: 600;
+}
+
+.custom-tax-table .btn-icon:disabled {
+    color: #ccc;
+    pointer-events: none;
+}
+
+
+
