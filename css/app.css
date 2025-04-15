@@ -116,7 +116,6 @@ code {
 .app-container > .app-content {
     background-color: #F3F5F7;
     min-height: 100vh;
-    padding: 24px;
 }
 
 .section-box {
@@ -152,7 +151,6 @@ code {
 }
 
 .sidebar-wrapper {
-    width: 402px;
     background-color: white;
     border-radius: 12px;
     height: 600px;
@@ -243,6 +241,4 @@ code {
     color: #ccc;
     pointer-events: none;
 }
-
-
 
