@@ -1,16 +1,19 @@
 ﻿@page "/"
 @using DesafioAxians.Models
 
-<FormActions />
-<div class="container-fluid mt-3">
-    <div class="row">
+<FormActions 
+    PublicarHabilitado="@PodePublicar"
+    OnPublicar="Publicar" />
+
+<div class="container-fluid mt-5" style="width: 94%; max-width: 1720;">
+    <div class="col-12 row m-auto">
         <!-- Sidebar -->
-        <div class="col-12 col-md-4 col-lg-3 mb-3">
+        <div class="col-4 col-md-4 col-lg-3 mb-3">
             <Sidebar CurrentStep="@currentStep" OnStepChange="SetCurrentStep" />
         </div>
 
         <!-- Conteúdo -->
-        <div class="col-12 col-md-8 col-lg-9">
+        <div class="col-8 col-md-8 col-lg-9">
             <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-2">
                 <h4 class="mb-0">Opção @currentStep</h4>
 
@@ -20,7 +23,7 @@
                 </div>
             </div>
 
-            <TaxForm />
+            <TaxForm OnContarChanged="AtualizarContarSelecionado" @ref="formRef" />
             <TaxTable Taxas="@taxas" OnSelecionar="AtualizarSelecao" />
         </div>
     </div>
@@ -31,7 +34,6 @@
         OnEliminar="OnEliminar" />
 </div>
 
-
 <!-- Barra Inferior -->
 <FooterActions 
     Selecionadas="@taxasSelecionadas"
@@ -40,6 +42,8 @@
 
 @code {
     private int currentStep = 10;
+    private string contarSelecionado = "";
+    private TaxForm? formRef;
 
     private List<Taxa> taxas = new()
     {
@@ -51,9 +55,9 @@
 
     private int taxasSelecionadas => taxas.Count(t => t.Selecionada);
 
-    private Task SetCurrentStep(int step)
+    private Task AtualizarContarSelecionado(string valor)
     {
-        currentStep = step;
+        contarSelecionado = valor;
         return Task.CompletedTask;
     }
 
@@ -66,9 +70,8 @@
     private Task OnCancelar()
     {
         foreach (var t in taxas)
-        {
             t.Selecionada = false;
-        }
+
         return AtualizarSelecao();
     }
 
@@ -77,4 +80,26 @@
         taxas = taxas.Where(t => !t.Selecionada).ToList();
         return AtualizarSelecao();
     }
+
+    private Task SetCurrentStep(int step)
+    {
+        currentStep = step;
+        return Task.CompletedTask;
+    }
+
+    private async Task Publicar()
+    {
+        currentStep++;
+
+        formRef?.Resetar(); // método do filho para limpar campos
+        taxas.Clear();      // limpa a lista
+
+        contarSelecionado = "";
+
+        await AtualizarSelecao();
+    }
+
+    private bool PodePublicar =>
+        !string.IsNullOrWhiteSpace(contarSelecionado) &&
+        taxas.Any();
 }

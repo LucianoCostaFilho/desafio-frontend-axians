@@ -41,6 +41,14 @@
       "PackagePath": "staticwebassets\\Icons\\Tocomplete.png"
     },
     {
+      "Id": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\wwwroot\\Icons\\angle-left.png",
+      "PackagePath": "staticwebassets\\Icons\\angle-left.png"
+    },
+    {
+      "Id": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\wwwroot\\Icons\\angle-right.png",
+      "PackagePath": "staticwebassets\\Icons\\angle-right.png"
+    },
+    {
       "Id": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\wwwroot\\Icons\\arrow-left.png",
       "PackagePath": "staticwebassets\\Icons\\arrow-left.png"
     },
@@ -51,6 +59,18 @@
     {
       "Id": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\wwwroot\\Icons\\pencil-alt.png",
       "PackagePath": "staticwebassets\\Icons\\pencil-alt.png"
+    },
+    {
+      "Id": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\wwwroot\\Icons\\trash.png",
+      "PackagePath": "staticwebassets\\Icons\\trash.png"
+    },
+    {
+      "Id": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\wwwroot\\Icons\\vector-left.png",
+      "PackagePath": "staticwebassets\\Icons\\vector-left.png"
+    },
+    {
+      "Id": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\wwwroot\\Icons\\vector-right.png",
+      "PackagePath": "staticwebassets\\Icons\\vector-right.png"
     },
     {
       "Id": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\wwwroot\\css\\app.css",

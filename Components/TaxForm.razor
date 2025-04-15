@@ -1,5 +1,5 @@
 <!-- Tipo de Taxa -->
-<div class="section-box mb-4" style="padding: 32px;">
+<div class="section-box mb-4" style="padding: 32px; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
     <label class="form-label section-title" style="margin-top: -8px;">Tipo de taxa</label>
     <p class="section-subtitle" style="margin-top: 12px;">Adicionar tipo de taxa</p>
     
@@ -14,30 +14,41 @@
 
 <!-- Contar -->
 <div class="counter-box mb-4">
-    <div style="padding: 32px 32px 55px 32px;">
+    <div style="padding: 32px 32px 55px 32px; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
         <label class="form-label fw-semibold d-block" style="color: #686C73; font-size: 20px;">Contar *</label>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" id="contarSim" value="Sim" />
-            <label class="form-check-label" style="color: #141D2A; font-size: 14px;" for="contarSim">Sim</label>
+            <input class="form-check-input" type="radio" id="contarSim" name="contar" value="Sim" @onchange="AtualizarContar" />
+            <label class="form-check-label" for="contarSim">Sim</label>
         </div>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" id="contarNao" value="Não"  />
-            <label class="form-check-label" style="color: #141D2A; font-size: 14px;" for="contarNao">Não</label>
+            <input class="form-check-input" type="radio" id="contarNao" name="contar" value="Não" @onchange="AtualizarContar" />
+            <label class="form-check-label" for="contarNao">Não</label>
         </div>
     </div>
 </div>
 
 @code {
+    [Parameter] public EventCallback<string> OnContarChanged { get; set; }
+
+    private string Contar { get; set; } = "";
     private string SelectedTaxType = "NUTS";
-    private string Contar = "Sim";
     private bool TaxaPorProduto = false;
 
     private List<string> TaxTypes = new()
     {
-        "NUTS",
-        "IVA",
-        "ICMS",
-        "ISS",
-        "Outro"
+        "NUTS", "IVA", "ICMS", "ISS", "Outro"
     };
+
+    private async Task AtualizarContar(ChangeEventArgs e)
+    {
+        Contar = e.Value?.ToString() ?? "";
+        await OnContarChanged.InvokeAsync(Contar);
+    }
+
+    public void Resetar()
+    {
+        Contar = "";
+        SelectedTaxType = "NUTS";
+        TaxaPorProduto = false;
+    }
 }

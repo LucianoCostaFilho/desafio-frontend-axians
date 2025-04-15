@@ -34,7 +34,7 @@
                     <td class="text-end">@($"{taxa.Valor:0.##} %")</td>
                     <td class="text-end">
                         <button class="btn btn-link text-danger p-0" @onclick="() => RemoverTaxa(taxa)">
-                            <i class="bi bi-trash"></i>
+                            <img src="Icons/trash.png" width="32px" />
                         </button>
                     </td>
                 </tr>
@@ -56,10 +56,10 @@
 
     <div class="d-flex align-items-center gap-1">
         <button class="btn btn-icon" @onclick="() => MudarPagina(1)" disabled="@(PaginaAtual == 1)">
-            <i class="bi bi-chevron-double-left"></i>
+            <img src="Icons/vector-left.png" width="13px" />
         </button>
         <button class="btn btn-icon" @onclick="() => MudarPagina(PaginaAtual - 1)" disabled="@(PaginaAtual == 1)">
-            <i class="bi bi-chevron-left"></i>
+            <img src="Icons/angle-left.png" width="13px" />
         </button>
 
         @for (int i = 1; i <= TotalPaginas; i++)
@@ -70,10 +70,11 @@
         }
 
         <button class="btn btn-icon" @onclick="() => MudarPagina(PaginaAtual + 1)" disabled="@(PaginaAtual == TotalPaginas)">
-            <i class="bi bi-chevron-right"></i>
+            <img src="Icons/angle-right.png" width="13px" />
+
         </button>
         <button class="btn btn-icon" @onclick="() => MudarPagina(TotalPaginas)" disabled="@(PaginaAtual == TotalPaginas)">
-            <i class="bi bi-chevron-double-right"></i>
+            <img src="Icons/vector-right.png" width="13px" />
         </button>
     </div>
 </div>

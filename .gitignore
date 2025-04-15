@@ -1,0 +1,65 @@
+# Build e Debug
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.VC.db
+*.vscode/
+*.dbmdl
+
+# Config local
+*.local.json
+appsettings.Development.json
+secrets.json
+
+# Visual Studio e Rider
+.vs/
+.idea/
+*.DotSettings.user
+
+# Log e Publish
+*.log
+*.nlog
+*.publishsettings
+*.deploy.cmd
+*.deploy-readme.txt
+
+# ASP.NET Stuff
+Generated_Code/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Blazor WebAssembly
+wwwroot/css/app.css
+wwwroot/css/bootstrap.min.css
+wwwroot/css/open-iconic-bootstrap.min.css
+wwwroot/js/bootstrap.min.js
+wwwroot/js/app.js
+
+# Node/NPM/Yarn (caso use)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Docker
+*.pid
+*.seed
+docker-compose.override.yml
+
+# Testes
+TestResults/
+coverage/
+*.coverage
+*.coveragexml
+*.testsettings
+*.vsmdi
+*.psess
+*.vsp
+*.vspscc
+
+# Outros
+*.DS_Store
+Thumbs.db
