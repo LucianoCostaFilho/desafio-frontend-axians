@@ -41,8 +41,16 @@
       "PackagePath": "staticwebassets\\Icons\\Tocomplete.png"
     },
     {
+      "Id": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\wwwroot\\Icons\\angle-left-menu.png",
+      "PackagePath": "staticwebassets\\Icons\\angle-left-menu.png"
+    },
+    {
       "Id": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\wwwroot\\Icons\\angle-left.png",
       "PackagePath": "staticwebassets\\Icons\\angle-left.png"
+    },
+    {
+      "Id": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\wwwroot\\Icons\\angle-right-menu.png",
+      "PackagePath": "staticwebassets\\Icons\\angle-right-menu.png"
     },
     {
       "Id": "C:\\Users\\lucia\\Desktop\\ProjetoBlazor\\DesafioAxians\\wwwroot\\Icons\\angle-right.png",

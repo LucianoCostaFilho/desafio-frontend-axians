@@ -1,11 +1,10 @@
-<div class="sidebar-wrapper" style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+<div class="sidebar-wrapper" style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; margin-top: 11px; padding: 24px;">
     @for (int i = 1; i <= 12; i++)
     {
         var isActive = CurrentStep == i;
         var isCompleted = i < CurrentStep;
 
-        <div class="sidebar-option @(isActive ? "active" : "")"
-             @onclick="() => OnStepChange.InvokeAsync(i)">
+        <div class="sidebar-option @(isActive ? "active" : "")">
             <span class="option-text" style="font-size: 14px;">Opção @i</span>
 
             @if (isActive)
