@@ -196,14 +196,12 @@ code {
     font-size: 1rem;
 }
 
-/* Estilo geral da linha */
 .custom-tax-table .table tbody tr {
     background-color: #E5E7EB !important;
     margin-bottom: 4px;
     border-collapse: separate;
 }
 
-/* Arredondar lateral da linha */
 .custom-tax-table .table tbody tr td:first-child {
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
@@ -214,14 +212,12 @@ code {
     border-bottom-right-radius: 8px;
 }
 
-/* Dropdown de itens por página */
 .custom-tax-table select.form-select {
     color: #6057EE;
     border: 1px solid #6057EE;
     width: auto;
 }
 
-/* Botões da paginação */
 .custom-tax-table .btn-icon {
     background-color: transparent;
     border: none;
@@ -240,5 +236,65 @@ code {
 .custom-tax-table .btn-icon:disabled {
     color: #ccc;
     pointer-events: none;
+}
+
+.pagination-button {
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: transparent;
+    color: #555;
+    border-radius: 50%;
+}
+
+.pagination-button.active {
+    background-color: #DFDDFC;
+    color: #6057EE;
+}
+
+.custom-switch {
+    margin-left: 12px;
+    position: relative;
+    width: 57px;
+    height: 32px;
+}
+
+.custom-switch-input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.custom-switch-label {
+    position: absolute;
+    cursor: pointer;
+    background-color: #DFDDFC;
+    border-radius: 34px;
+    width: 100%;
+    height: 100%;
+    transition: background-color 0.2s;
+}
+
+.custom-switch-label::before {
+    content: "";
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.2s;
+}
+
+.custom-switch-input:checked + .custom-switch-label::before {
+    transform: translateX(25px);
+    background-color: #5C43EB;
 }
 

@@ -1,14 +1,24 @@
 @using DesafioAxians.Models
 
-<div class="card  p-4 mb-4 custom-tax-table" style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+<div class="card mb-3 custom-tax-table" style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; padding: 32px 32px 54px 32px; ">
     <div class="d-flex justify-content-between align-items-center mb-3">
-        <div class="form-check form-switch">
-            <input class="form-check-input" type="checkbox" id="taxaSwitch" @bind="TaxaPorProduto">
-            <label class="form-check-label ms-2" for="taxaSwitch">Taxa por Produto</label>
+        <div>
+            <label class="form-label fw-semibold d-block mb-2" style="color: #333; font-size: 20px;">
+                Taxa <span class="text-danger">*</span>
+            </label>
+
+            <div class="d-flex justify-content-between align-items-center" style="width: 100%;">
+                <label class="form-label" style="font-weight: 500;">Adicionar taxa por localização</label>
+                <div class="custom-switch">
+                    <input type="checkbox" id="taxaSwitch" @bind="TaxaPorProduto" class="custom-switch-input" />
+                    <label class="custom-switch-label" for="taxaSwitch"></label>
+                </div>
+            </div>
+
         </div>
 
-        <button class="btn btn-outline-primary btn-sm" @onclick="AdicionarTaxa">
-            <i class="bi bi-plus-lg me-1"></i> ADICIONAR TAXA
+        <button class="btn btn-outline-primary btn-sm d-flex align-items-center gap-1" @onclick="AdicionarTaxa">
+            <i class="bi bi-plus-lg"></i> ADICIONAR TAXA
         </button>
     </div>
 
@@ -41,45 +51,43 @@
             }
         </tbody>
     </table>
+    
+    <div class="d-flex justify-content-between align-items-center flex-wrap">
+        <div class="d-flex align-items-center gap-2 text-muted">
+            <span>@($"{PaginaAtual} de {TotalPaginas} páginas ({Taxas.Count} itens)")</span>
+            <select class="form-select form-select-sm border-0 shadow-none" style="width: auto;" @onchange="AlterarItensPorPagina">
+                <option value="5">5</option>
+                <option selected value="10">10</option>
+                <option value="25">25</option>
+            </select>
+            <label class="mb-0">itens por página</label>
+        </div>
 
-    <div class="d-flex justify-content-between align-items-center mt-3 flex-wrap">
-    <!-- Esquerda -->
-    <div class="d-flex align-items-center gap-2 text-muted">
-        <span>@($"{PaginaAtual} de {TotalPaginas} páginas ({Taxas.Count} itens)")</span>
-        <select class="form-select form-select-sm border-0 shadow-none" style="width: auto;" @onchange="AlterarItensPorPagina">
-            <option value="5">5</option>
-            <option selected value="10">10</option>
-            <option value="25">25</option>
-        </select>
-        <label class="mb-0">itens por página</label>
-    </div>
-
-    <!-- Direita -->
-    <div class="d-flex align-items-center gap-2">
-        <button class="btn btn-light p-1 rounded-circle" style="background-color: transparent;" @onclick="() => MudarPagina(1)" disabled="@(PaginaAtual == 1)">
-            <img src="Icons/vector-left.png" width="13px" />
-        </button>
-        <button class="btn btn-light p-1 rounded-circle" style="background-color: transparent;" @onclick="() => MudarPagina(PaginaAtual - 1)" disabled="@(PaginaAtual == 1)">
-            <img src="Icons/angle-left.png" width="13px" />
-        </button>
-
-        @for (int i = 1; i <= TotalPaginas; i++)
-        {
-            <button class="btn p-1 rounded-circle"
-                    style="@((i == PaginaAtual) ? "background-color: #DFDDFC; color: #6057EE; width: 38px; height: 38px;" : "background: none; color: #555;")"
-                    @onclick="() => MudarPagina(i)">
-                @i
+        <!-- Direita -->
+        <div class="d-flex align-items-center gap-2">
+            <button class="btn btn-light p-1 rounded-circle" style="background-color: transparent;" @onclick="() => MudarPagina(1)" disabled="@(PaginaAtual == 1)">
+                <img src="Icons/vector-left.png" width="13px" />
             </button>
-        }
+            <button class="btn btn-light p-1 rounded-circle" style="background-color: transparent;" @onclick="() => MudarPagina(PaginaAtual - 1)" disabled="@(PaginaAtual == 1)">
+                <img src="Icons/angle-left.png" width="13px" />
+            </button>
 
-        <button class="btn btn-light p-1 rounded-circle" style="background-color: transparent;" @onclick="() => MudarPagina(PaginaAtual + 1)" disabled="@(PaginaAtual == TotalPaginas)">
-            <img src="Icons/angle-right.png" width="13px" />
-        </button>
-        <button class="btn btn-light p-1 rounded-circle" style="background-color: transparent;" @onclick="() => MudarPagina(TotalPaginas)" disabled="@(PaginaAtual == TotalPaginas)">
-            <img src="Icons/vector-right.png" width="13px" />
-        </button>
+            @for (int i = 1; i <= TotalPaginas; i++)
+            {
+                <button class="pagination-button @(i == PaginaAtual ? "active" : "")"
+                        @onclick="() => MudarPagina(i)">
+                    @i
+                </button>
+            }
+
+            <button class="btn btn-light p-1 rounded-circle" style="background-color: transparent;" @onclick="() => MudarPagina(PaginaAtual + 1)" disabled="@(PaginaAtual == TotalPaginas)">
+                <img src="Icons/angle-right.png" width="13px" />
+            </button>
+            <button class="btn btn-light p-1 rounded-circle" style="background-color: transparent;" @onclick="() => MudarPagina(TotalPaginas)" disabled="@(PaginaAtual == TotalPaginas)">
+                <img src="Icons/vector-right.png" width="13px" />
+            </button>
+        </div>
     </div>
-</div>
 
 </div>
 
