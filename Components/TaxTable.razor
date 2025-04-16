@@ -26,11 +26,11 @@
         <thead >
             <tr>
                 <th><input type="checkbox" @onchange="ToggleSelecionarTodos" checked="@TodosSelecionados" /></th>
-                <th>NUTS II</th>
-                <th>NUTS III</th>
-                <th>Concelho</th>
-                <th class="text-end">Taxa (%)</th>
-                <th class="text-end"></th>
+                <th style="font-weight: 500">NUTS II</th>
+                <th style="font-weight: 500">NUTS III</th>
+                <th style="font-weight: 500">Concelho</th>
+                <th style="font-weight: 500" class="text-end">Taxa (%)</th>
+                <th style="font-weight: 500" class="text-end"></th>
             </tr>
         </thead>
         <tbody>
@@ -124,12 +124,7 @@
 
     private void AdicionarTaxa()
     {
-        Taxas.Add(new Taxa("Outro", 7.5m)
-        {
-            Nuts2 = "Norte",
-            Nuts3 = "Área Metropolitana",
-            Concelho = "Braga"
-        });
+        Taxas.Add(new Taxa("Norte", "Área Metropolitana", "Braga", 7.5m));
         OnSelecionar.InvokeAsync();
     }
 
