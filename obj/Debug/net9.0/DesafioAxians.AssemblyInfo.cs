@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DesafioAxians")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e525e4bb4c688a3cb7cac62938336818833a98a5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+27f12ceeb969c36f0ea55635d31a24cc6cfbd513")]
 [assembly: System.Reflection.AssemblyProductAttribute("DesafioAxians")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DesafioAxians")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
