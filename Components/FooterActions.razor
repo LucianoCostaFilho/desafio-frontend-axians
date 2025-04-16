@@ -1,15 +1,16 @@
 @if (Mostrar)
 {
-    <div class="fixed-bottom bg-dark text-white py-3 px-4 shadow d-flex justify-content-between align-items-center" style="height: 122px; background-color: #212C46 !important;">
-        <div style="margin-top: 51px; margin-bottom: 50px; margin-left: 54px; font-size: 14px;">
+    <div class="footer-actions-bar d-flex justify-content-between align-items-center px-4 py-3">
+        <div class="footer-actions-text">
             <strong>@Selecionadas</strong> taxas selecionadas
         </div>
-        <div>
-            <button class="btn btn-sm me-2" style="background-color: #FFFFFF; color: #6057EE; font-size: 13px; width: 90px; height: 40px;  solid #6057EE;"  @onclick="Cancelar">CANCELAR</button>
-            <button class="btn btn-sm" style="background-color: #6057EE; color: white; font-size: 13px; width: 83px; height: 40px;" @onclick="Eliminar">ELIMINAR</button>
+        <div class="footer-actions-buttons d-flex gap-2">
+            <button class="btn btn-sm btn-cancelar" @onclick="Cancelar">CANCELAR</button>
+            <button class="btn btn-sm btn-eliminar" @onclick="Eliminar">ELIMINAR</button>
         </div>
     </div>
 }
+
 
 @code {
     [Parameter] public int Selecionadas { get; set; }

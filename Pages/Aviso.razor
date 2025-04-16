@@ -1,35 +1,37 @@
 ﻿@page "/"
 @using DesafioAxians.Models
 
-<FormActions 
-    PublicarHabilitado="@PodePublicar"
-    OnPublicar="Publicar" />
+<FormActions PublicarHabilitado="@PodePublicar" OnPublicar="Publicar" />
 
-<div class="container-fluid mt-5" style="width: 94%; max-width: 1720;">
-    <div class="col-12 row m-auto">
-        <div class="col-4 col-md-4 col-lg-3 mb-3">
+<div class="container-fluid mt-5 mx-auto" style="width: 94%; max-width: 1720px;">
+    <div class="col-12 gap-4 flex-col d-md-flex flex-md-row m-auto">
+        <div class="col-md-4 col-md-4 col-lg-3 mb-3">
             <Sidebar CurrentStep="@currentStep" OnStepChange="SetCurrentStep" />
         </div>
 
-        <div class="col-8 col-md-8 col-lg-9">
+        <div class="col-md-8 col-md-8 col-lg-9">
             <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-2">
                 <h4 class="mb-0">Opção @currentStep</h4>
 
-                <div class="d-flex justify-content-end align-items-center gap-4">
-                <button class="d-flex align-items-center gap-2 border-0 bg-transparent" style="font-weight: 600; color: #6c757d;">
-                    <div class="rounded-circle d-flex justify-content-center align-items-center" style="background-color: #DFDDFC; width: 36px; height: 36px;">
-                        <img src="Icons/angle-left-menu.png" width="14" />
-                    </div>
-                    ANTERIOR
-                </button>
+                <div class="m-auto m-md-0 d-flex justify-content-end align-items-center gap-4">
+                    <button class="d-flex align-items-center gap-2 border-0 bg-transparent"
+                        style="font-weight: 600; color: #6c757d;">
+                        <div class="rounded-circle d-flex justify-content-center align-items-center"
+                            style="background-color: #DFDDFC; width: 36px; height: 36px;">
+                            <img src="Icons/angle-left-menu.png" width="14" />
+                        </div>
+                        ANTERIOR
+                    </button>
 
-                <button class="d-flex align-items-center gap-2 border-0 bg-transparent" style="font-weight: 600; color: #6c757d;">
-                    SEGUINTE
-                    <div class="rounded-circle d-flex justify-content-center align-items-center" style="background-color: #DFDDFC; width: 36px; height: 36px;">
-                        <img src="Icons/angle-right-menu.png" width="14" />
-                    </div>
-                </button>
-            </div>
+                    <button class="d-flex align-items-center gap-2 border-0 bg-transparent"
+                        style="font-weight: 600; color: #6c757d;">
+                        SEGUINTE
+                        <div class="rounded-circle d-flex justify-content-center align-items-center"
+                            style="background-color: #DFDDFC; width: 36px; height: 36px;">
+                            <img src="Icons/angle-right-menu.png" width="14" />
+                        </div>
+                    </button>
+                </div>
             </div>
 
             <div style="margin-bottom: 20px; margin-top: -5px; color: #6057EE; font-size: 14px;">
@@ -41,16 +43,8 @@
         </div>
     </div>
 
-    <FooterActions
-        Selecionadas="@taxasSelecionadas"
-        OnCancelar="OnCancelar"
-        OnEliminar="OnEliminar" />
+    <FooterActions Selecionadas="@taxasSelecionadas" OnCancelar="OnCancelar" OnEliminar="OnEliminar" />
 </div>
-
-<FooterActions 
-    Selecionadas="@taxasSelecionadas"
-    OnCancelar="OnCancelar"
-    OnEliminar="OnEliminar" />
 
 @code {
     private int currentStep = 1;
@@ -59,10 +53,10 @@
 
     private List<Taxa> taxas = new()
     {
-        new("Norte", "Área Metropolitana", "Braga", 7.5m),
-        new("Norte", "Área Metropolitana", "Braga", 7.5m),
-        new("Norte", "Área Metropolitana", "Braga", 7.5m),
-        new("Norte", "Área Metropolitana", "Braga", 7.5m),
+    new("Norte", "Área Metropolitana", "Braga", 7.5m),
+    new("Norte", "Área Metropolitana", "Braga", 7.5m),
+    new("Norte", "Área Metropolitana", "Braga", 7.5m),
+    new("Norte", "Área Metropolitana", "Braga", 7.5m),
     };
 
     private int taxasSelecionadas => taxas.Count(t => t.Selecionada);
@@ -103,8 +97,8 @@
     {
         currentStep++;
 
-        formRef?.Resetar(); 
-        taxas.Clear();      
+        formRef?.Resetar();
+        taxas.Clear();
 
         contarSelecionado = "";
 
@@ -112,6 +106,6 @@
     }
 
     private bool PodePublicar =>
-        !string.IsNullOrWhiteSpace(contarSelecionado) &&
-        taxas.Any();
+    !string.IsNullOrWhiteSpace(contarSelecionado) &&
+    taxas.Any();
 }

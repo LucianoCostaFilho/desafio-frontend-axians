@@ -1,5 +1,5 @@
 <section>
-    <div class="form-actions d-flex  align-items-center border-bottom bg-white m-auto" style="height: 104px; background-color: #F3F5F7 !important; width: 98%; ">
+    <div class="h-auto flex-wrap form-actions d-flex  align-items-center border-bottom bg-white m-auto" style="height: 104px; background-color: #F3F5F7 !important; width: 98%; ">
         <div style="margin-left: 50px; margin-top: 8px;">
             <div>
                 <img src="Icons/arrow-left.png" width="14" />
@@ -23,14 +23,15 @@
             </div>
         </div>
 
-        <div class="d-flex align-items-center gap-3 " style="margin-right: 60px; margin-left: auto;">
-            <button class="btn btn-outline-primary d-flex align-items-center gap-2" style="background-color: #FFFFFF;">
-                <img src="Icons/disk.png" width="14" /> GUARDAR ALTERAÇÕES
+        <div class="d-flex align-items-center gap-3 " style="margin-right: 60px; margin-left: auto; background-color: #FFFFFF ">
+            <button class="btn btn-outline-primary d-flex align-items-center gap-2">
+                <img src="Icons/disk.png" width="14" />
+                GUARDAR ALTERAÇÕES
             </button>
 
             <button class="btn btn-outline-primary" style="background-color: #FFFFFF;">VALIDAR</button>
 
-            <button class="btn btn-outline-primary" disabled="@(!PublicarHabilitado)" @onclick="OnPublicarClick">
+            <button class="btn btn-outline-primary" style="background-color: #FFFFFF" disabled="@(!PublicarHabilitado)" @onclick="OnPublicarClick">
                 <i class="bi bi-check2"></i> PUBLICAR
             </button>
         </div>
