@@ -298,3 +298,7 @@ code {
     background-color: #5C43EB;
 }
 
+.custom-tax-table .table {
+    border-collapse: separate;
+    border-spacing: 0 4px;
+}
