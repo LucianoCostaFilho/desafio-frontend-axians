@@ -1,8 +1,11 @@
+@using System.ComponentModel.DataAnnotations
+@using DesafioAxians.Models
+
 <div class="section-box mb-4" style="padding: 32px; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
     <label class="form-label section-title" style="margin-top: -8px;">Tipo de taxa</label>
     <p class="section-subtitle" style="margin-top: 12px;">Adicionar tipo de taxa</p>
-    
-     <select class="form-select custom-select" style="margin-top: 20px; width: 157px;" @bind="SelectedTaxType">
+
+    <select class="form-select custom-select" style="margin-top: 20px; width: 157px;" @bind="SelectedTaxType">
         <option disabled selected>Selecionar</option>
         @foreach (var tax in TaxTypes)
         {
@@ -11,42 +14,52 @@
     </select>
 </div>
 
+<!-- Contar -->
 <div class="counter-box mb-4">
-    <div style="padding: 32px 32px 55px 32px; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+        <div style="padding: 32px 32px 55px 32px; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
         <label class="form-label fw-semibold d-block" style="color: #686C73; font-size: 20px;">Contar *</label>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" id="contarSim" name="contar" value="Sim" @onchange="AtualizarContar" />
-            <label class="form-check-label" for="contarSim">Sim</label>
-        </div>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" id="contarNao" name="contar" value="Não" @onchange="AtualizarContar" />
-            <label class="form-check-label" for="contarNao">Não</label>
-        </div>
+
+        <InputRadioGroup TValue="string"
+                 Value="@Model.ContarSelecionado"
+                 ValueChanged="AtualizarContar"
+                 ValueExpression="() => Model.ContarSelecionado"
+                 class="form-check form-check-inline">
+            @foreach (var opcao in Opcoes)
+            {
+                <div class="form-check form-check-inline me-4">
+                    <InputRadio TValue="string" class="form-check-input" Value="@opcao" />
+                    <label class="form-check-label">@opcao</label>
+                </div>
+            }
+        </InputRadioGroup>
     </div>
 </div>
 
 @code {
     [Parameter] public EventCallback<string> OnContarChanged { get; set; }
 
-    private string Contar { get; set; } = "";
-    private string SelectedTaxType = "NUTS";
-    private bool TaxaPorProduto = false;
+    private Contar Model { get; set; } = new();
 
-    private List<string> TaxTypes = new()
-    {
-        "NUTS", "IVA", "ICMS", "ISS", "Outro"
-    };
-
-    private async Task AtualizarContar(ChangeEventArgs e)
-    {
-        Contar = e.Value?.ToString() ?? "";
-        await OnContarChanged.InvokeAsync(Contar);
-    }
+    private List<string> Opcoes => new() { "Sim", "Não" };
 
     public void Resetar()
     {
-        Contar = "";
-        SelectedTaxType = "NUTS";
-        TaxaPorProduto = false;
+        Model = new(); 
+    }
+
+    private string SelectedTaxType = "NUTS";
+    private List<string> TaxTypes = new() { "NUTS", "IVA", "ICMS", "ISS", "Outro" };
+
+    private async Task AtualizarContar(string value)
+    {
+        Model.ContarSelecionado = value;
+        await OnContarChanged.InvokeAsync(value);
+    }
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender && !string.IsNullOrEmpty(Model.ContarSelecionado))
+        {
+            await OnContarChanged.InvokeAsync(Model.ContarSelecionado);
+        }
     }
 }
