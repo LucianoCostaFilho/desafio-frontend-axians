@@ -2159,10 +2159,10 @@ C:\Users\danie\Downloads\DesafioAxians\DesafioAxians\obj\Debug\net9.0\compressed
 C:\Users\danie\Downloads\DesafioAxians\DesafioAxians\obj\Debug\net9.0\compressed\yj0ry9sfin-zeg6maz48g.gz
 C:\Users\danie\Downloads\DesafioAxians\DesafioAxians\obj\Debug\net9.0\compressed\njq8od8d8s-d6lily30aj.gz
 C:\Users\lucia\Desktop\ProjetoBlazor\DesafioAxians\obj\Debug\net9.0\compressed\yy44wmaekp-5pgux5cv51.gz
-C:\Users\lucia\Desktop\ProjetoBlazor\DesafioAxians\bin\Debug\net9.0\wwwroot\_framework\DesafioAxians.norsgznr3d.pdb
-C:\Users\lucia\Desktop\ProjetoBlazor\DesafioAxians\bin\Debug\net9.0\wwwroot\_framework\DesafioAxians.8plfhnjig2.wasm
-C:\Users\lucia\Desktop\ProjetoBlazor\DesafioAxians\bin\Debug\net9.0\wwwroot\_framework\DesafioAxians.8plfhnjig2.wasm.gz
-C:\Users\lucia\Desktop\ProjetoBlazor\DesafioAxians\bin\Debug\net9.0\wwwroot\_framework\DesafioAxians.norsgznr3d.pdb.gz
-C:\Users\lucia\Desktop\ProjetoBlazor\DesafioAxians\obj\Debug\net9.0\compressed\ly22ozjraf-8plfhnjig2.gz
-C:\Users\lucia\Desktop\ProjetoBlazor\DesafioAxians\obj\Debug\net9.0\compressed\yj0ry9sfin-norsgznr3d.gz
-C:\Users\lucia\Desktop\ProjetoBlazor\DesafioAxians\obj\Debug\net9.0\compressed\njq8od8d8s-h57xt9edkg.gz
+C:\Users\lucia\Desktop\ProjetoBlazor\DesafioAxians\bin\Debug\net9.0\wwwroot\_framework\DesafioAxians.d0mtp998pi.pdb
+C:\Users\lucia\Desktop\ProjetoBlazor\DesafioAxians\bin\Debug\net9.0\wwwroot\_framework\DesafioAxians.z9m6gm76mr.wasm
+C:\Users\lucia\Desktop\ProjetoBlazor\DesafioAxians\bin\Debug\net9.0\wwwroot\_framework\DesafioAxians.z9m6gm76mr.wasm.gz
+C:\Users\lucia\Desktop\ProjetoBlazor\DesafioAxians\bin\Debug\net9.0\wwwroot\_framework\DesafioAxians.d0mtp998pi.pdb.gz
+C:\Users\lucia\Desktop\ProjetoBlazor\DesafioAxians\obj\Debug\net9.0\compressed\ly22ozjraf-z9m6gm76mr.gz
+C:\Users\lucia\Desktop\ProjetoBlazor\DesafioAxians\obj\Debug\net9.0\compressed\yj0ry9sfin-d0mtp998pi.gz
+C:\Users\lucia\Desktop\ProjetoBlazor\DesafioAxians\obj\Debug\net9.0\compressed\njq8od8d8s-2c40to22by.gz

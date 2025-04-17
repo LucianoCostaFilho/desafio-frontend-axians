@@ -1,7 +1,10 @@
 ﻿@page "/"
 @using DesafioAxians.Models
 
-<FormActions PublicarHabilitado="@PodePublicar" OnPublicar="Publicar" />
+<FormActions 
+    PublicarHabilitado="@PodePublicar"
+    OnPublicar="Publicar"
+    OnGuardarAlteracoes="AtualizarOpcaoAtual" />
 
 <div class="container-fluid mt-5 mx-auto" style="width: 94%; max-width: 1720px;">
     <div class="col-12 gap-4 flex-col d-md-flex flex-md-row m-auto">
@@ -112,10 +115,33 @@
 
     private async Task Publicar()
     {
-        if (formRef is null || tableRef is null)
-            return;
+        if (opcoesSalvas.Count >= 12)
+            return; 
 
         var novaOpcao = new Opcao
+        {
+            ContarSelecionado = formRef?.ContarSelecionado,
+            TipoTaxa = formRef?.SelectedTaxType,
+            TaxaLocalizacao = tableRef?.TaxaPorLocalizacao ?? false,
+            Taxas = tableRef?.TaxasSelecionadas.ToList()
+        };
+
+        opcoesSalvas.Add(novaOpcao);
+
+        currentStep++;
+        formRef?.Resetar();
+        taxas.Clear();
+        contarSelecionado = "";
+
+        await AtualizarSelecao();
+    }
+
+    private Task AtualizarOpcaoAtual()
+    {
+        if (formRef is null || tableRef is null || currentStep > opcoesSalvas.Count)
+            return Task.CompletedTask;
+
+        var opcaoAtualizada = new Opcao
         {
             ContarSelecionado = formRef.ContarSelecionado,
             TipoTaxa = formRef.SelectedTaxType,
@@ -123,17 +149,14 @@
             Taxas = tableRef.TaxasSelecionadas.ToList()
         };
 
-        opcoesSalvas.Add(novaOpcao); // armazena na lista
+        opcoesSalvas[currentStep - 1] = opcaoAtualizada;
 
-        currentStep++;
-
-        formRef.Resetar();
-        taxas.Clear();
-        contarSelecionado = "";
-
-        await AtualizarSelecao();
+        return Task.CompletedTask;
     }
+
+
     private bool PodePublicar =>
     !string.IsNullOrWhiteSpace(contarSelecionado) &&
-    taxas.Any();
+    taxas.Any() &&
+    opcoesSalvas.Count < 12;
 }

@@ -6,7 +6,7 @@
     <label class="form-label section-title" style="margin-top: -8px;">Tipo de taxa</label>
     <p class="section-subtitle" style="margin-top: 12px;">Adicionar tipo de taxa</p>
 
-    <select class="form-select custom-select" style="margin-top: 20px; width: 157px;" @bind="_selectedTaxType">
+    <select class="form-select custom-select" style="margin-top: 20px; width: 157px;" @bind="SelectedTaxType ">
         <option disabled selected>Selecionar</option>
         @foreach (var tax in TaxTypes)
         {
@@ -43,7 +43,6 @@
     public string SelectedTaxType { get; set; } = "NUTS";
 
     private Contar Model { get; set; } = new();
-    private string _selectedTaxType = "NUTS";
     private List<string> TaxTypes = new() { "NUTS", "IVA", "ICMS", "ISS", "Outro" };
     private List<string> Opcoes => new() { "Sim", "Não" };
 
@@ -58,7 +57,7 @@
     public void Resetar()
     {
         Model = new();
-        _selectedTaxType = "NUTS";
+        SelectedTaxType  = "NUTS";
     }
 
     private async Task AtualizarContar(string value)

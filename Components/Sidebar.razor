@@ -1,25 +1,27 @@
 @using DesafioAxians.Models
+
 <div class="sidebar-wrapper" style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; margin-top: 11px; padding: 24px;">
-    @for (int i = 0; i < OpcoesSalvas.Count; i++)
+    @for (int i = 0; i < Math.Min(OpcoesSalvas.Count + 1, 12); i++)
     {
         var index = i + 1;
         var isActive = CurrentStep == index;
-        var isCompleted = index < CurrentStep;
+        var isPublicada = index <= OpcoesSalvas.Count;
+        var isEmEdicao = index == OpcoesSalvas.Count + 1;
 
         <div class="sidebar-option @(isActive ? "active" : "")" @onclick="() => OnStepChange.InvokeAsync(index)">
-            <span class="option-text" style="font-size: 14px;">Opção @index</span>
+            <span class="option-text" style="font-size: 14px;">opção @index</span>
 
             @if (isActive)
             {
                 <img src="Icons/Is-Active.png" width="24" />
             }
-            else if (isCompleted)
+            else if (isPublicada)
             {
                 <img src="Icons/Complete.png" width="24" />
             }
-            else
+            else if (isEmEdicao)
             {
-                <img src="Icons/Tocomplete.png" width="24" />
+                <img src="Icons/ToComplete.png" width="24" />
             }
         </div>
     }
