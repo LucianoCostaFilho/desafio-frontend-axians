@@ -1,11 +1,13 @@
+@using DesafioAxians.Models
 <div class="sidebar-wrapper" style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; margin-top: 11px; padding: 24px;">
-    @for (int i = 1; i <= 12; i++)
+    @for (int i = 0; i < OpcoesSalvas.Count; i++)
     {
-        var isActive = CurrentStep == i;
-        var isCompleted = i < CurrentStep;
+        var index = i + 1;
+        var isActive = CurrentStep == index;
+        var isCompleted = index < CurrentStep;
 
-        <div class="sidebar-option @(isActive ? "active" : "")">
-            <span class="option-text" style="font-size: 14px;">Opção @i</span>
+        <div class="sidebar-option @(isActive ? "active" : "")" @onclick="() => OnStepChange.InvokeAsync(index)">
+            <span class="option-text" style="font-size: 14px;">Opção @index</span>
 
             @if (isActive)
             {
@@ -26,4 +28,5 @@
 @code {
     [Parameter] public int CurrentStep { get; set; }
     [Parameter] public EventCallback<int> OnStepChange { get; set; }
+    [Parameter] public List<Opcao> OpcoesSalvas { get; set; } = new();
 }

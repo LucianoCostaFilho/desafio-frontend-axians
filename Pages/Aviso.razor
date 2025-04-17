@@ -6,7 +6,12 @@
 <div class="container-fluid mt-5 mx-auto" style="width: 94%; max-width: 1720px;">
     <div class="col-12 gap-4 flex-col d-md-flex flex-md-row m-auto">
         <div class="col-md-4 col-md-4 col-lg-3 mb-3">
-            <Sidebar CurrentStep="@currentStep" OnStepChange="SetCurrentStep" />
+            <Sidebar 
+                CurrentStep="@currentStep" 
+                OnStepChange="SetCurrentStep"
+                OpcoesSalvas="@opcoesSalvas" 
+            />
+
         </div>
 
         <div class="col-md-8 col-md-8 col-lg-9">
@@ -38,8 +43,8 @@
                 <span>* Campos de preenchimento obrigatório</span>
             </div>
 
-            <TaxForm OnContarChanged="AtualizarContarSelecionado" @ref="formRef" />
-            <TaxTable Taxas="@taxas" OnSelecionar="AtualizarSelecao" />
+            <TaxForm @ref="formRef" OnContarChanged="AtualizarContarSelecionado" />
+            <TaxTable @ref="tableRef" Taxas="@taxas" OnSelecionar="AtualizarSelecao" />
         </div>
     </div>
 
@@ -50,6 +55,8 @@
     private int currentStep = 1;
     private string contarSelecionado = "";
     private TaxForm? formRef;
+    private TaxTable? tableRef;
+    private List<Opcao> opcoesSalvas = new();
 
     private List<Taxa> taxas = new()
     {
@@ -87,24 +94,45 @@
         return AtualizarSelecao();
     }
 
-    private Task SetCurrentStep(int step)
+    private async Task SetCurrentStep(int step)
     {
         currentStep = step;
-        return Task.CompletedTask;
+
+        if (step <= opcoesSalvas.Count)
+        {
+            var opcao = opcoesSalvas[step - 1];
+
+            if (formRef is not null && tableRef is not null)
+            {
+                await formRef.Carregar(opcao);
+                tableRef.Carregar(opcao);
+            }
+        }
     }
 
     private async Task Publicar()
     {
+        if (formRef is null || tableRef is null)
+            return;
+
+        var novaOpcao = new Opcao
+        {
+            ContarSelecionado = formRef.ContarSelecionado,
+            TipoTaxa = formRef.SelectedTaxType,
+            TaxaLocalizacao = tableRef.TaxaPorLocalizacao,
+            Taxas = tableRef.TaxasSelecionadas.ToList()
+        };
+
+        opcoesSalvas.Add(novaOpcao); // armazena na lista
+
         currentStep++;
 
-        formRef?.Resetar();
+        formRef.Resetar();
         taxas.Clear();
-
         contarSelecionado = "";
 
         await AtualizarSelecao();
     }
-
     private bool PodePublicar =>
     !string.IsNullOrWhiteSpace(contarSelecionado) &&
     taxas.Any();

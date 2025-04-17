@@ -1,7 +1,7 @@
 @using DesafioAxians.Models
 
-<div class="tax-table-box mb-3 custom-tax-table"
-    style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; padding: 32px 32px 54px 32px; ">
+<div class="tax-table-box mb-3 custom-tax-table" style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; padding: 32px 32px 54px 32px;">
+    <!-- Header -->
     <div class="d-flex justify-content-between align-items-center mb-3">
         <div>
             <label class="form-label fw-semibold d-block mb-2" style="color: #333; font-size: 20px;">
@@ -15,7 +15,6 @@
                     <label class="custom-switch-label" for="taxaSwitch"></label>
                 </div>
             </div>
-
         </div>
 
         <button class="btn btn-outline-primary btn-sm d-flex align-items-center gap-1" @onclick="AdicionarTaxa">
@@ -23,6 +22,7 @@
         </button>
     </div>
 
+    <!-- Tabela -->
     <div class="overflow-x-auto">
         <table class="table table-hover table-borderless align-middle">
             <thead>
@@ -55,11 +55,11 @@
         </table>
     </div>
 
+    <!-- Paginação -->
     <div class="d-flex justify-content-between align-items-center flex-wrap">
         <div class="d-flex align-items-center gap-2 text-muted">
             <span>@($"{PaginaAtual} de {TotalPaginas} páginas ({Taxas.Count} itens)")</span>
-            <select class="form-select form-select-sm border-0 shadow-none" style="width: auto;"
-                @onchange="AlterarItensPorPagina">
+            <select class="form-select form-select-sm border-0 shadow-none" style="width: auto;" @onchange="AlterarItensPorPagina">
                 <option value="5">5</option>
                 <option selected value="10">10</option>
                 <option value="25">25</option>
@@ -67,51 +67,43 @@
             <label class="mb-0">itens por página</label>
         </div>
 
-        <!-- Direita -->
         <div class="m-auto m-md-0 d-flex align-items-center gap-2">
-            <button class="btn btn-light p-1 rounded-circle" style="background-color: transparent;"
-                @onclick="() => MudarPagina(1)" disabled="@(PaginaAtual == 1)">
+            <button class="btn btn-light p-1 rounded-circle" style="background-color: transparent;" @onclick="() => MudarPagina(1)" disabled="@(PaginaAtual == 1)">
                 <img src="Icons/vector-left.png" width="13px" />
             </button>
-            <button class="btn btn-light p-1 rounded-circle" style="background-color: transparent;"
-                @onclick="() => MudarPagina(PaginaAtual - 1)" disabled="@(PaginaAtual == 1)">
+            <button class="btn btn-light p-1 rounded-circle" style="background-color: transparent;" @onclick="() => MudarPagina(PaginaAtual - 1)" disabled="@(PaginaAtual == 1)">
                 <img src="Icons/angle-left.png" width="13px" />
             </button>
 
             @for (int i = 1; i <= TotalPaginas; i++)
             {
-                <button class="pagination-button @(i == PaginaAtual ? "active" : "")" @onclick="() => MudarPagina(i)">
-                    @i
-                </button>
+                <button class="pagination-button @(i == PaginaAtual ? "active" : "")" @onclick="() => MudarPagina(i)">@i</button>
             }
 
-            <button class="btn btn-light p-1 rounded-circle" style="background-color: transparent;"
-                @onclick="() => MudarPagina(PaginaAtual + 1)" disabled="@(PaginaAtual == TotalPaginas)">
+            <button class="btn btn-light p-1 rounded-circle" style="background-color: transparent;" @onclick="() => MudarPagina(PaginaAtual + 1)" disabled="@(PaginaAtual == TotalPaginas)">
                 <img src="Icons/angle-right.png" width="13px" />
             </button>
-            <button class="btn btn-light p-1 rounded-circle" style="background-color: transparent;"
-                @onclick="() => MudarPagina(TotalPaginas)" disabled="@(PaginaAtual == TotalPaginas)">
+            <button class="btn btn-light p-1 rounded-circle" style="background-color: transparent;" @onclick="() => MudarPagina(TotalPaginas)" disabled="@(PaginaAtual == TotalPaginas)">
                 <img src="Icons/vector-right.png" width="13px" />
             </button>
         </div>
     </div>
-
 </div>
-
-
 
 @code {
     [Parameter] public List<Taxa> Taxas { get; set; } = new();
     [Parameter] public EventCallback OnSelecionar { get; set; }
 
+    public bool TaxaPorLocalizacao => TaxaPorProduto;
+    public List<Taxa> TaxasSelecionadas => Taxas;
+
     private bool TaxaPorProduto { get; set; }
     private int PaginaAtual { get; set; } = 1;
     private int ItensPorPagina { get; set; } = 10;
-
     private int TotalPaginas => (int)Math.Ceiling((double)Taxas.Count / ItensPorPagina);
 
     private IEnumerable<Taxa> PaginatedTaxas =>
-    Taxas.Skip((PaginaAtual - 1) * ItensPorPagina).Take(ItensPorPagina);
+        Taxas.Skip((PaginaAtual - 1) * ItensPorPagina).Take(ItensPorPagina);
 
     private bool TodosSelecionados => Taxas.All(t => t.Selecionada);
 
@@ -153,4 +145,12 @@
         ItensPorPagina = int.Parse(e.Value!.ToString()!);
         PaginaAtual = 1;
     }
+
+    public void Carregar(Opcao opcao)
+    {
+        TaxaPorProduto = opcao.TaxaLocalizacao;
+        Taxas.Clear();
+        Taxas.AddRange(opcao.Taxas ?? new());
+    }
+
 }
