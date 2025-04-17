@@ -1,38 +1,35 @@
 <section>
-    <div class="h-auto flex-wrap form-actions d-flex  align-items-center border-bottom bg-white m-auto" style="height: 104px; background-color: #F3F5F7 !important; width: 98%; ">
-        <div style="margin-left: 50px; margin-top: 8px;">
-            <div>
-                <img src="Icons/arrow-left.png" width="14" />
-            </div>
+    <div class="form-actions d-flex flex-wrap align-items-center border-bottom bg-white m-auto px-3 py-2" style="background-color: #F3F5F7 !important; width: 98%;">
+        
+        <!-- Ícone Voltar -->
+        <div class="me-3 mt-2">
+            <img src="Icons/arrow-left.png" width="14" />
         </div>
-        <div class="d-flex flex-column" style=" margin-left: 16px; font-family: Lato !; width: 497px; margin-top: 22px; margin-bottom: 26px;">
-            <span class="text-muted small" style="  font-family: Lato !important; font-size: 12px;">AVISOS</span>
 
-            <div class="d-flex align-items-center" >
-                <!-- ← NOVO AVISO -->
-                <div class="d-flex align-items-center" style="width: 172px;">
-                    <span style=" font-size: 28px; font-family: Lato !important;" >NOVO AVISO</span>
+        <!-- Título e status -->
+        <div class="flex-grow-1" style="min-width: 200px;">
+            <span class="text-muted small d-block" style="font-size: 12px;">AVISOS</span>
+            <div class="d-flex flex-wrap align-items-center mt-1">
+                <div class="me-3">
+                    <span style="font-size: 28px;">NOVO AVISO</span>
                 </div>
-
-                <div class="text-primary d-flex align-items-center" style="margin-left: 32px; margin-top: 12px; width: 195px;">
-                    <img src="Icons/pencil-alt.png" width="14" style="margin-right: 5px;"/>
-                    <span class="fw-medium text-uppercase small" style="letter-spacing: 1.7px;">
-                        EM PREENCHIMENTO
-                    </span>
+                <div class="text-primary d-flex align-items-center mt-1" style="gap: 5px;">
+                    <img src="Icons/pencil-alt.png" width="14" />
+                    <span class="fw-medium text-uppercase small" style="letter-spacing: 1.7px;">EM PREENCHIMENTO</span>
                 </div>
             </div>
         </div>
 
-        <div class="d-flex align-items-center gap-3 " style="margin-right: 60px; margin-left: auto; background-color: #FFFFFF ">
-           <button class="btn btn-outline-primary d-flex align-items-center gap-2" @onclick="() => OnGuardarAlteracoes.InvokeAsync()">
+        <!-- Botões -->
+        <div class="d-flex gap-2 mt-3 mt-lg-0 ms-lg-auto flex-wrap">
+            <button class="btn btn-outline-primary d-flex align-items-center gap-2" @onclick="() => OnGuardarAlteracoes.InvokeAsync()">
                 <img src="Icons/disk.png" width="14" />
                 GUARDAR ALTERAÇÕES
             </button>
 
+            <button class="btn btn-outline-primary">VALIDAR</button>
 
-            <button class="btn btn-outline-primary" style="background-color: #FFFFFF;">VALIDAR</button>
-
-            <button class="btn btn-outline-primary" style="background-color: #FFFFFF" disabled="@(!PublicarHabilitado)" @onclick="OnPublicarClick">
+            <button class="btn btn-outline-primary" disabled="@(!PublicarHabilitado)" @onclick="OnPublicarClick">
                 <i class="bi bi-check2"></i> PUBLICAR
             </button>
         </div>

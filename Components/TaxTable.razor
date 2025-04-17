@@ -2,14 +2,14 @@
 
 <div class="tax-table-box mb-3 custom-tax-table" style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; padding: 32px 32px 54px 32px;">
     <!-- Header -->
-    <div class="d-flex justify-content-between align-items-center mb-3">
-        <div>
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center mb-3 gap-3">
+        <div class="w-100">
             <label class="form-label fw-semibold d-block mb-2" style="color: #333; font-size: 20px;">
                 Taxa <span class="text-danger">*</span>
             </label>
 
-            <div class="d-flex justify-content-between align-items-center" style="width: 100%;">
-                <label class="form-label" style="font-weight: 500;">Adicionar taxa por localização</label>
+            <div class="d-flex justify-content-between align-items-center flex-wrap">
+                <label class="form-label mb-0" style="font-weight: 500;">Adicionar taxa por localização</label>
                 <div class="custom-switch">
                     <input type="checkbox" id="taxaSwitch" @bind="TaxaPorProduto" class="custom-switch-input" />
                     <label class="custom-switch-label" for="taxaSwitch"></label>
@@ -17,13 +17,13 @@
             </div>
         </div>
 
-        <button class="btn btn-outline-primary btn-sm d-flex align-items-center gap-1" @onclick="AdicionarTaxa">
+        <button class="btn btn-outline-primary btn-sm d-flex align-items-center gap-1 mt-3 mt-md-0" @onclick="AdicionarTaxa">
             <i class="bi bi-plus-lg"></i> ADICIONAR TAXA
         </button>
     </div>
 
     <!-- Tabela -->
-    <div class="overflow-x-auto">
+    <div class="table-responsive">
         <table class="table table-hover table-borderless align-middle">
             <thead>
                 <tr>
@@ -56,8 +56,8 @@
     </div>
 
     <!-- Paginação -->
-    <div class="d-flex justify-content-between align-items-center flex-wrap">
-        <div class="d-flex align-items-center gap-2 text-muted">
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-3 mt-3">
+        <div class="d-flex align-items-center gap-2 text-muted flex-wrap">
             <span>@($"{PaginaAtual} de {TotalPaginas} páginas ({Taxas.Count} itens)")</span>
             <select class="form-select form-select-sm border-0 shadow-none" style="width: auto;" @onchange="AlterarItensPorPagina">
                 <option value="5">5</option>
@@ -67,7 +67,7 @@
             <label class="mb-0">itens por página</label>
         </div>
 
-        <div class="m-auto m-md-0 d-flex align-items-center gap-2">
+        <div class="d-flex align-items-center gap-2">
             <button class="btn btn-light p-1 rounded-circle" style="background-color: transparent;" @onclick="() => MudarPagina(1)" disabled="@(PaginaAtual == 1)">
                 <img src="Icons/vector-left.png" width="13px" />
             </button>
@@ -152,5 +152,4 @@
         Taxas.Clear();
         Taxas.AddRange(opcao.Taxas ?? new());
     }
-
 }
